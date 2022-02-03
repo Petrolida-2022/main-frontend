@@ -7,7 +7,6 @@
         "../scss/_mixin.scss",
         "../scss/_variables.scss",
         "../scss/_navbar.scss",
-        "../scss/_comingsoon.scss",
         "../scss/_error404.scss"
     ],
     "names": [],

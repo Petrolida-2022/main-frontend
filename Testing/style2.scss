@@ -1,0 +1,379 @@
+.head1{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 70px;
+	letter-spacing: 0.3%;
+}
+.head2{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 0.3%;
+}
+.head3{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 52px;
+	letter-spacing: 0.3%;
+}
+.head4{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 42px;
+	letter-spacing: 0.3%;
+}
+.head5{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: 0.3%;
+}
+.head6{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0.3%;
+}
+.head7{
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.3%;
+}
+
+.body1{
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.3%;
+}
+.body2{
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0.003em;
+}
+.body3{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.003em;
+}
+.body4{
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.3%;
+}
+.body5{
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+	letter-spacing: 0.3%;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 375px) {
+	.container-sm, .container {
+	  max-width: 345px;
+	}
+  }
+  
+  @media (min-width: 576px) {
+	.container-sm, .container {
+	  max-width: 540px;
+	}
+  }
+  @media (min-width: 768px) {
+	.container-md, .container-sm, .container {
+	  max-width: 540px;
+	}
+  }
+  @media (min-width: 992px) {
+	.container-lg, .container-md, .container-sm, .container {
+	  max-width: 720px;
+	}
+  }
+  @media (min-width: 1200px) {
+	.container-xl, .container-lg, .container-md, .container-sm, .container {
+	  max-width: 960px;
+	}
+  }
+  @media (min-width: 1400px) {
+	.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+	  max-width: 1140px;
+	}
+  }
+
+body {
+  margin: 0;
+  background-color: rgba(27, 33, 49, 1);
+}
+/* Haero + Navbar */
+
+.hero {
+  	position: relative;
+	background: linear-gradient(
+	rgba(27, 33, 49, 0.85), 
+	rgba(27, 33, 49, 1)),
+	url("img/petrosmart.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-attachment:fixed;
+	height: 900px;
+}
+.navbar .container{
+  margin-left: 150px;
+}
+
+.hero .navbar{
+  height: 72px;
+}
+
+.hero .nav-link{
+  color: white;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.3%;
+  	margin-left: 40px;
+}
+
+
+.buttonlogin {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #4CAF50;
+  color:#4CAF50;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.3%;
+}
+
+.buttonlogin:hover {
+  background-color: #4CAF50;
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.detailhero{
+  margin-top: 150px;
+}
+
+.detailhero h1{
+	color: rgba(255, 255, 255, 0.87);	
+}
+.detailhero .detailcompetition p{
+	margin-top: 40px;
+	color: rgba(255, 255, 255, 0.68);
+}
+.competitionpool{
+	margin-top: 40px;
+	color: rgba(255, 255, 255, 0.87);
+	// width: 400px;
+	background-color: red;
+}
+.dot {
+	height: 8px;
+	width: 8px;
+	background-color: rgba(44, 136, 87, 1);
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+}
+.competitionpool p, .competitionpool span{
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.informationcenter{
+	margin-top: 51px;
+	width: 440px;
+}
+
+.button {
+	background-color: rgba(255, 255, 255, 0);
+	border: 1px solid #4CAF50;
+	color:#4CAF50;
+	width: 200px;
+	height: 50px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: 'Poppins';
+	  font-weight: 400;
+	  font-size: 16px;
+	  line-height: 28px;
+	  letter-spacing: 0.3%;
+  }
+  
+  .button:hover {
+	background-color: #4CAF50;
+	color: white; 
+	border: 2px solid #4CAF50;
+  }
+  .content{
+	position:absolute;
+	left: -66px;
+	margin-top: 56px;
+	width: 550px;
+	height: 138px;
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	color: white;
+	border-radius: 66.5px;
+  }
+.information{
+	position: relative;
+	left: 216px;
+	margin-top: 16px;
+}
+.countdown{
+	margin-top: 16px;
+	font-family:'Tienne';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 42px;
+	letter-spacing: 0.08em;
+}
+.note{
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 22px;
+color: rgba(255, 255, 255, 0.68);
+width: 270px;
+}
+
+.about{
+	position: relative;
+	width: 755px;
+	margin: auto;
+}
+
+.about .title{
+	color: rgba(255, 255, 255, 0.87);
+	margin-left: 0px;
+
+}
+.about .detail{
+	color: rgba(255, 255, 255, 0.68);
+	margin: auto;
+
+}
+
+.footer{
+	color: white;
+	margin-top: 150px;
+	
+}
+.footer .logo{
+	margin-left: 150px;
+}
+.logo img{
+	height: 50px;
+}
+
+ .info{
+	width: 370px;
+	margin-top: 16px;
+	color: rgba(224, 9, 9, 0.68);
+	max-width: 50%;
+}
+
+
+
+   .footer .detail p{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.003em;
+	color: rgba(255, 255, 255, 0.68);
+	margin-bottom: 0px;
+	
+  }
+
+  .footer .contact .headingtitle p,
+  .footer .visit-us .headingtitle p,
+  .footer .media .headingtitle p{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: rgba(255, 255, 255, 0.87);
+	margin-bottom: 15.59px;
+  }
+  .footer hr{
+	color : rgba(255, 255, 255, 0.05);
+	margin-bottom: 24px;
+
+  }
+
+   .sosmed-info img{
+	  background-color: rgba(44, 136, 87, 1);
+	  height: 36px;
+	  margin-left: 6px;
+	  margin-right: 6px;
+	  width: 36px;
+	  padding: 8px;
+	  border-radius: 50%;
+  }
+  .sosmed-info a{
+	color: #0d6dfd00;
+    text-decoration: underline;
+  }
+  
+  .sosmed-info p{
+	  color: rgba(255, 255, 255, 0.68);
+	  margin-top: 24px;
+	  margin-bottom: 24px;
+  }

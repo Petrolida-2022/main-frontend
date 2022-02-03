@@ -1,4 +1,4 @@
-#comingsoon {
+comingsoon-title#comingsoon {
   min-height: 100vh;
   position: relative;
   .comingsoon-title {
@@ -12,7 +12,7 @@
     width: 425px;
     max-width: 100%;
     margin: 1.5rem 0;
-    @include body2();
+    @include heading4();
     @media screen and (max-width: 768px) {
       @include body3();
     }
