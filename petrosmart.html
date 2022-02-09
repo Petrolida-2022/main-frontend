@@ -8,67 +8,68 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="scss\petrosmartt.scss">
   <link rel="shortcut icon" href="img/logo-only.png" type="image/x-icon">
   <title>Petrosmart - Petrolida 2022</title>
 </head>
 
 <body>
   <section class="hero">
-    <div class="container">
-      <div class="hero-title">
-        <h1 class="">Petrosmart</h1>
-        <p class="hero-desc body2 cc68">Challenge their knowledge by answering questions covering technical and non-technical aspects of the oil  and gas industry.</p>
+    <div class="heropetrosmart">
+      <div class="container">
+        <div class="hero-title">
+          <h1 class="">Petrosmart</h1>
+          <p class="hero-desc body2 cc68">Challenge their knowledge by answering questions covering technical and non-technical aspects of the oil  and gas industry.</p>
+        </div>
+        <div class="row competition-status cc87">
+          <div class="col-7">
+            <p class="cc87">Competition Status</p>
+            <p class="body5 cc87 status-desc"><span class="dot"></span>   Active</p>
+          </div>
+          <div class="col-5">
+            <p class="cc87">Prize Pool</p>
+            <p class="body5 cc87"><img src="img\emojione-monotone_trophy.svg" alt="Thropy">   IDR 6,000,000</p>
+          </div>
+        </div>
+        <div class="row button-info">
+          <div class="col-6">
+            <button class="button" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+              <span class=" align-items-center">
+                  <span class=" align-items-center">Guide Book</span>
+              </span>
+            </button>
+          </div>
+          <div class="col-6">
+            <button class="buttonrgster" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+              <span class=" align-items-center">
+                  <span class=" align-items-center">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>  
       </div>
-      <div class="row competition-status cc87">
-        <div class="col-7">
-          <p class="cc87">Competition Status</p>
-          <p class="body5 cc87 status-desc"><span class="dot"></span>   Active</p>
-        </div>
-        <div class="col-5">
-          <p class="cc87">Prize Pool</p>
-          <p class="body5 cc87"><img src="img\emojione-monotone_trophy.svg" alt="Thropy">   IDR 6,000,000</p>
-        </div>
-      </div>
-      <div class="row button-info">
-        <div class="col-6">
-          <button class="button" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-            <span class=" align-items-center">
-                <span class=" align-items-center">Guide Book</span>
-            </span>
-          </button>
-        </div>
-        <div class="col-6">
-          <button class="button" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-            <span class=" align-items-center">
-                <span class=" align-items-center">Register</span>
-            </span>
-          </button>
-        </div>
-      </div>  
-    </div>
-    <div class="container timer">
-      <div class="information">
-        <p>open registration</p>
-        <div class="timer-container d-flex align-items-baseline">
-          <div class="col-3 days">
-            <span id="days-number" class="d-block text-center">00</span>
-            <span class="d-block text-center timer-name">DAYS</span>
-          </div>
-          <span class="d-block text-center timer-separator">:</span>
-          <div class="col-3  hours">
-            <span id="hours-number" class="d-block text-center">00</span>
-            <span class="d-block text-center timer-name">HOURS</span>
-          </div>
-          <span class="d-block text-center timer-separator">:</span>
-          <div class="col-3  mins">
-            <span id="mins-number" class="d-block text-center">00</span>
-            <span class="d-block text-center timer-name">MINUTES</span>
-          </div>
-          <span class="d-block text-center timer-separator">:</span>
-          <div class="col-3  secs">
-            <span id="secs-number" class="d-block text-center">00</span>
-            <span class="d-block text-center timer-name">SECONDS</span>
+      <div class="container timer">
+        <div class="information">
+          <p>open registration</p>
+          <div class="timer-container d-flex align-items-baseline">
+            <div class="col-3 days">
+              <span id="days-number" class="d-block text-center">00</span>
+              <span class="d-block text-center timer-name">DAYS</span>
+            </div>
+            <span class="d-block text-center timer-separator">:</span>
+            <div class="col-3  hours">
+              <span id="hours-number" class="d-block text-center">00</span>
+              <span class="d-block text-center timer-name">HOURS</span>
+            </div>
+            <span class="d-block text-center timer-separator">:</span>
+            <div class="col-3  mins">
+              <span id="mins-number" class="d-block text-center">00</span>
+              <span class="d-block text-center timer-name">MINUTES</span>
+            </div>
+            <span class="d-block text-center timer-separator">:</span>
+            <div class="col-3  secs">
+              <span id="secs-number" class="d-block text-center">00</span>
+              <span class="d-block text-center timer-name">SECONDS</span>
+            </div>
           </div>
         </div>
       </div>
@@ -259,7 +260,7 @@
   <section class="regist-anounce text-center">
     <h3 class="cc87">Don’t Forget to Register!</h3>
     <p class="cc68">Don’t miss the ultimate opportunity to showcase your ideas and innovation in reinforcing the a future of our energy industry</p>
-    <button class="button" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+    <button class="buttonrgster" data-bs-toggle="modal" data-bs-target="#feedbackModal">
       <span class=" align-items-center">
           <span >Register</span>
       </span>

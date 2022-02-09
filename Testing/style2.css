@@ -1,87 +1,98 @@
-h1{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 56px;
-	line-height: 70px;
-	letter-spacing: 0.3%;
-}
-h2{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 48px;
-	line-height: 60px;
-	letter-spacing: 0.3%;
-}
-h3{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 40px;
-	line-height: 52px;
-	letter-spacing: 0.3%;
-}
-h4{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 32px;
-	line-height: 42px;
-	letter-spacing: 0.3%;
-}
-h5{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 30px;
-	line-height: 40px;
-	letter-spacing: 0.3%;
-}
-h6{
-	font-family: 'Poppins';
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 34px;
-	letter-spacing: 0.3%;
-}
-h7{
-	font-family: 'Poppins';
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 30px;
-	letter-spacing: 0.3%;
+.head1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 70px;
+  letter-spacing: 0.3%;
 }
 
-p1{
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
-	letter-spacing: 0.3%;
+.head2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.3%;
 }
-p2{
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 28px;
-	letter-spacing: 0.3%;
+
+.head3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.3%;
 }
-p3{
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 25px;
-	letter-spacing: 0.3%;
+
+.head4 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.3%;
 }
-p4{
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.3%;
+
+.head5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.3%;
 }
-p4{
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 22px;
-	letter-spacing: 0.3%;
+
+.head6 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.3%;
+}
+
+.head7 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3%;
+}
+
+.body1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.3%;
+}
+
+.body2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.003em;
+}
+
+.body3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.003em;
+}
+
+.body4 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3%;
+}
+
+.body5 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.3%;
 }
 
 .container,
@@ -100,10 +111,9 @@ p4{
 
 @media (min-width: 375px) {
   .container-sm, .container {
-    max-width: 375px;
+    max-width: 345px;
   }
 }
-
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -129,138 +139,249 @@ p4{
     max-width: 1140px;
   }
 }
-
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #1b2131;
 }
+
 /* Haero + Navbar */
 .hero {
-  background-color: #f8f9fa;
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  position: relative;
+  background: linear-gradient(rgba(27, 33, 49, 0.85), #1b2131), url("img/petrosmart.svg") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
 }
 
-.hero {
-  position: relative;
-	background: linear-gradient(
-		rgba(27, 33, 49, 0.85), 
-		rgba(27, 33, 49, 1)),
-		url("petrosmat.svg");
-	height: 900px;
+.navbar .container {
+  margin-left: 150px;
 }
 
-.navbar {
-  position: relative;
-  /* display: flex; */
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.hero .navbar {
   height: 72px;
 }
-.navbar-transparent {
-  color: rgb(255, 255, 255);
+
+.hero .nav-link {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3%;
+  margin-left: 40px;
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  .navbar-expand-lg .navbar-nav-scroll {
-    overflow: visible;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-  }
-  .navbar-expand-lg .navbar-toggler {
-    display: none;
-  }
-  .navbar-expand-lg .offcanvas-header {
-    display: none;
-  }
-  .navbar-expand-lg .offcanvas {
-    position: inherit;
-    bottom: 0;
-    z-index: 1000;
-    flex-grow: 1;
-    visibility: visible !important;
-    background-color: transparent;
-    border-right: 0;
-    border-left: 0;
-    transition: none;
-    transform: none;
-  }
-  .navbar-expand-lg .offcanvas-top,
-.navbar-expand-lg .offcanvas-bottom {
-    height: auto;
-    border-top: 0;
-    border-bottom: 0;
-  }
-  .navbar-expand-lg .offcanvas-body {
-    display: flex;
-    flex-grow: 0;
-    padding: 0;
-    overflow-y: visible;
-  }
-}
-
-.navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+.buttonlogin {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
   text-decoration: none;
-  white-space: nowrap;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.3%;
 }
 
-.hero-title{
-	color: rgba(255, 255, 255, 0.87);
-	width: 571px;
+.buttonlogin:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
 }
 
-.hero-paragraph{
-	margin-top: 40px;
-	color: rgba(255, 255, 255, 0.68);
-	width: 408px;
+.detailhero {
+  margin-top: 150px;
 }
 
-.hero-cta{
-	margin-top: 40px;
+.detailhero h1 {
+  color: rgba(255, 255, 255, 0.87);
 }
-.dot-active{
-    height: 25px;
-    width: 25px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .dot{
-    height: 25px;
-    width: 25px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-  }
+
+.detailhero .detailcompetition p {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.competitionpool {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: red;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #2c8857;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.competitionpool p, .competitionpool span {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.informationcenter {
+  margin-top: 51px;
+  width: 440px;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.3%;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}
+
+.content {
+  position: absolute;
+  left: -66px;
+  margin-top: 56px;
+  width: 550px;
+  height: 138px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: white;
+  border-radius: 66.5px;
+}
+
+.information {
+  position: relative;
+  left: 216px;
+  margin-top: 16px;
+}
+
+.countdown {
+  margin-top: 16px;
+  font-family: "Tienne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.08em;
+}
+
+.note {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.68);
+  width: 270px;
+}
+
+.about {
+  position: relative;
+  width: 755px;
+  margin: auto;
+}
+
+.about .title {
+  color: rgba(255, 255, 255, 0.87);
+  margin-left: 0px;
+}
+
+.about .detail {
+  color: rgba(255, 255, 255, 0.68);
+  margin: auto;
+}
+
+.footer {
+  color: white;
+  margin-top: 150px;
+}
+
+.footer .logo {
+  margin-left: 150px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.info {
+  width: 370px;
+  margin-top: 16px;
+  color: rgba(224, 9, 9, 0.68);
+  max-width: 50%;
+}
+
+.footer .detail p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 0px;
+}
+
+.footer .contact .headingtitle p,
+.footer .visit-us .headingtitle p,
+.footer .media .headingtitle p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.87);
+  margin-bottom: 15.59px;
+}
+
+.footer hr {
+  color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 24px;
+}
+
+.sosmed-info img {
+  background-color: #2c8857;
+  height: 36px;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 36px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.sosmed-info a {
+  color: #0d6dfd00;
+  text-decoration: underline;
+}
+
+.sosmed-info p {
+  color: rgba(255, 255, 255, 0.68);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=style2.css.map */
