@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="scss/style.css">
+</head>
+
+  <body>
+    <section id="registrationpage">
+      <div class="container">
+        <div class="title">
+          <h5>Register for Oil Rig Design Competition</h5>
+          <div class="title-description">
+            <p>Follow the simple steps to complete your registration</p>
+          </div>
+          <div class="breakline"></div>
+        </div>
+        <div class="row">
+          <div class="col-3" style="position: relative;">
+            <div class="borderr"></div>
+            <div class="progress-bar">
+              <div class="step">
+                <div class="step1">Information</div>
+                <div class="step2">Team information</div>
+                <div class="step-container">
+                  <div class="bullet active"><span><img src="img\human.svg" alt="account"></span></div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step1">Documents</div>
+                <div class="step2">Browse and upload</div>
+                <div class="step-container">
+                  <div class="bullet"><span><img src="img\document.svg" alt="document"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="form-outer">
+              <form action="#">
+                <div class="page slidePage">
+                  <div class="stepinfo">Step 1/2</div>
+                  <h6 class="title">Let’s start with your team</h6>
+                  <div class="titleinfo">Please fill in the details below</div>
+                  <div class="breakform"></div>
+                  <div class="field">
+                    <div class="label">Enter your team name</div>
+                    <input type="text" placeholder="Team name"/>
+                  </div>
+                  <div class="field">
+                    <div class="label">Enter your team member</div>
+                    <input type="text" placeholder="Team member"/>
+                    <div class="file-upload">
+                      <div class="file-select">
+                        <div class="file-select-button" id="fileName"><p>Choose File</p></div>
+                        <div class="file-select-name" id="noFile">No file chosen</div> 
+                        <input type="file" name="chooseFile" id="chooseFile">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="label">University</div>
+                    <input type="text" placeholder="University origin"/>
+                  </div>
+                  <div class="field row justify-content-end nextBtn">
+                    <button>Next</button>
+                  </div>
+                </div>
+                <div class="page">
+                  <div class="stepinfo">Step 2/2</div>
+                  <h6 class="title">Complete Submission</h6>
+                  <div class="titleinfo">Thanks for taking the time to comple
+                    this form</div>
+                  <div class="breakform"></div>
+                  <div class="field">
+                    <div class="label">Upload your identity</div>
+                    <div class="file-upload">
+                      <div class="file-select">
+                        <div class="file-select-button" id="fileName"><p>Choose File</p></div>
+                        <div class="file-select-name" id="noFile">No file chosen</div> 
+                        <input type="file" name="chooseFile" id="chooseFile">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="label">Upload your twibbon</div>
+                    <div class="file-upload">
+                      <div class="file-select">
+                        <div class="file-select-button" id="fileName"><p>Choose File</p></div>
+                        <div class="file-select-name" id="noFile">No file chosen</div> 
+                        <input type="file" name="chooseFile" id="chooseFile">
+                      </div>
+                    </div>
+                    <div class="twibboninfo">Twibbon can be downloaded <a href="">here</a></div>
+                  </div>
+                  <div class="field">
+                    <div class="label">Upload your payment</div>
+                    <div class="file-upload">
+                      <div class="file-select">
+                        <div class="file-select-button" id="fileName"><p>Choose File</p></div>
+                        <div class="file-select-name" id="noFile">No file chosen</div> 
+                        <input type="file" name="chooseFile" id="chooseFile">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field row justify-content-end nextBtn">
+                    <!-- <button class="prev-1 prev">Pervious</button> -->
+                    <button class="submit">Complete Submission</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js\registrationscript.js" defer></script>
+  </body>
+</html>
