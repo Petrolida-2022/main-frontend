@@ -1,0 +1,304 @@
+body {
+    position: relative;
+    width: 1440px;
+    height: 4019px;
+    
+    /* Dark/Blue Black */
+    background: #1B2131;
+}
+
+body .Hero {
+    position: absolute;
+    width: 1506px;
+    height: 900px;
+    left: -66px;
+    top: 0px;
+}
+
+.Hero .background {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+}
+.background .reactangle {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, #1B2131 0%, rgba(27, 33, 49, 0.85) 100%);
+}
+.background .unplash {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+
+    /* background: url("/img/background/background.png"); */
+}
+
+.navbar {
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.navbar .logo-Petrolida-2022{
+    position: absolute;
+    width: 96px;
+    height: 40px;
+    left: 150px;
+    top: 16px;
+    background: url("/img/logo/Logo-Petrolida-2022 1.png");
+}
+
+.navbar .About {
+    position: absolute;
+    width: 43px;
+    height: 24px;
+    left: calc(50% - 43px/2 + 90.5px);
+    top: 24px;
+    
+    /* Body 4 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    
+    /* identical to box height, or 171% */
+    letter-spacing: 0.003em;
+    
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.navbar .Events {
+    position: absolute;
+    width: 46px;
+    height: 24px;
+    left: calc(50% - 46px/2 + 175px);
+    top: 24px;
+
+    /* Body 4 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* identical to box height, or 171% */
+    letter-spacing: 0.003em;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.navbar .FAQ {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    left: calc(50% - 28px/2 + 252px);
+    top: 24px;
+
+    /* Body 4 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* identical to box height, or 171% */
+    letter-spacing: 0.003em;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.navbar .Contact {
+    position: absolute;
+    width: 58px;
+    height: 24px;
+    left: calc(50% - 58px/2 + 335px);
+    top: 24px;
+
+    /* Body 4 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* identical to box height, or 171% */
+    letter-spacing: 0.003em;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+}
+.navbar .Sign-In {
+    position: absolute;
+    width: 150px;
+    height: 39.04px;
+    left: 1140px;
+    top: 15.62px;
+}
+.navbar .Sign-In .small-normal {
+    position: absolute;
+    left: 79.17%;
+    right: 10.42%;
+    top: 0.39%;
+    bottom: 98.64%;
+
+    /* Primary/Main Green */
+    border: 1px solid #2C8857;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.navbar .Sign-In .small-normal p {
+    position: absolute;
+    width: 54px;
+    height: 28px;
+    left: calc(50% - 54px/2);
+    top: calc(50% - 28px/2 + 0.48px);
+
+    /* Body 2 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+    /* identical to box height, or 175% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.003em;
+
+    /* Primary/Main Green */
+    color: #2C8857;
+
+
+}
+
+
+.main-text h2 {
+    position: absolute;
+    width: 571px;
+    height: 62px;
+    left: calc(50% - 571px/2 - 284.5px);
+    top: 222px;
+
+    /* H2 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+
+    /* identical to box height, or 129% */
+    letter-spacing: 0.003em;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);   
+}
+.main-text p {
+    position: absolute;
+    width: 521px;
+    height: 84px;
+    left: calc(50% - 521px/2 - 309.5px);
+    top: 316px;
+
+    /* Body 2 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+    /* or 175% */
+    letter-spacing: 0.003em;
+
+    /* White/White 2 */
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.competition-status  {
+    position: absolute;
+    width: 136px;
+    height: 46px;
+    left: 150px;
+    top: 448px;
+}
+
+/* .competition-status p {
+    position: absolute;
+    width: 136px;
+    height: 24px;
+    left: calc(50% - 136px/2 - 502px);
+    top: 448px;
+
+    /* Body 4 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    /* identical to box height, or 171% */
+    letter-spacing: 0.003em;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+}
+.competition-status .c {
+    position: absolute;
+    width: 51px;
+    height: 14px;
+    left: 150px;
+    top: 480px;
+}
+.competition-status .c img {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 150px;
+    top: 483px;
+
+    /* Primary/Main Green */
+    background: #2C8857;
+}
+.competition-status .c p {
+    position: absolute;
+    width: 35px;
+    height: 14px;
+    left: calc(50% - 35px/2 - 536.5px);
+    top: 480px;
+
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* White/White */
+    color: rgba(255, 255, 255, 0.87);
+} */
+
+.prize-pool {
+    position: absolute;
+    width: 98px;
+    height: 46px;
+    left: 334px;
+    top: 448px;
+}
+
+
+
+
+
