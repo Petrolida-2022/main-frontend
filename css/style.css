@@ -1489,4 +1489,494 @@ comingsoon-title#comingsoon .comingsoon-image {
 
 strong {
   font-weight: bold !important;
+}
+
+#registrationpage {
+  margin: auto;
+  position: relative;
+}
+#registrationpage .container {
+  margin: 144px auto 0 auto;
+  height: 100%;
+  text-align: center;
+}
+#registrationpage .container .title-description {
+  margin-top: 15px;
+  font: 400 1rem/1.75rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+}
+#registrationpage .container .breakline {
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 61px;
+}
+#registrationpage header {
+  font-size: 35px;
+  font-weight: 600;
+  color: #def2f1;
+  margin: 0 0 30px 0;
+}
+#registrationpage .container-body {
+  background-color: green;
+  display: flex;
+  height: 100%;
+  width: 800px;
+}
+#registrationpage .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+#registrationpage form {
+  display: flex;
+  width: 400%;
+}
+#registrationpage .breakform {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  width: 100%;
+  margin-top: 16px;
+}
+#registrationpage .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+#registrationpage .stepinfo {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.38);
+}
+#registrationpage .title {
+  color: #def2f1;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.87);
+}
+#registrationpage .titleinfo {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  margin-top: 8px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.38);
+}
+#registrationpage .field {
+  max-width: 100%;
+  margin-top: 45px;
+  position: relative;
+  text-align: left;
+}
+#registrationpage .field input {
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 8px;
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+#registrationpage .field input:focus::-moz-placeholder {
+  color: rgba(44, 136, 87, 0.68);
+}
+#registrationpage .field input:focus:-ms-input-placeholder {
+  color: rgba(44, 136, 87, 0.68);
+}
+#registrationpage .field input:focus::placeholder {
+  color: rgba(44, 136, 87, 0.68);
+}
+#registrationpage .field input:focus {
+  border: 1px solid rgba(44, 136, 87, 0.68) !important;
+  box-shadow: 0 rgba(0, 0, 0, 0.075) !important;
+  outline: 0 none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#registrationpage .field .label {
+  font: 400 1rem/1.75rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  position: relative;
+  color: rgba(255, 255, 255, 0.87);
+}
+#registrationpage .field textarea {
+  margin-left: 15px;
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+}
+#registrationpage .field button {
+  width: 200px;
+  height: 50px;
+  background: #2C8857;
+  border-radius: 5px;
+  border: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.87);
+  margin-right: -10px;
+}
+#registrationpage .field .submit {
+  width: 285px;
+  height: 50px;
+  background: #2C8857;
+  border-radius: 5px;
+  border: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.87);
+}
+#registrationpage .field .file-upload {
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 8px;
+  position: relative;
+}
+#registrationpage .field .file-upload .file-select {
+  height: 100%;
+}
+#registrationpage .field .file-upload .file-select .file-select-button {
+  background: rgba(255, 255, 255, 0.38);
+  margin: auto;
+  width: 113px;
+  height: 56px;
+  position: absolute;
+  height: 100%;
+  padding: auto;
+}
+#registrationpage .field .file-upload .file-select .file-select-button p {
+  margin: 16px;
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+}
+#registrationpage .field .file-upload .file-select .file-select-name {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 123px;
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+}
+#registrationpage .field .file-upload .file-select .file-select-name {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 10px;
+}
+#registrationpage .field .file-upload .file-select:hover {
+  border-color: #2C8857;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#registrationpage .field .file-upload .file-select:hover .file-select-button {
+  background: #2C8857;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#registrationpage .field .file-upload.active .file-select {
+  border-color: #3fa46a;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#registrationpage .field .file-upload.active .file-select .file-select-button {
+  background: #3fa46a;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#registrationpage .field .file-upload .file-select input[type=file] {
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#registrationpage .field .file-upload .file-select.file-select-disabled {
+  opacity: 0.65;
+}
+#registrationpage .field .file-upload .file-select.file-select-disabled:hover {
+  cursor: default;
+  display: block;
+  border: 2px solid #dce4ec;
+  color: #2C8857;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: left;
+  background: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+}
+#registrationpage .field .file-upload .file-select.file-select-disabled:hover .file-select-button {
+  background: #dce4ec;
+  color: #2C8857;
+  padding: 0 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+#registrationpage .field .file-upload .file-select.file-select-disabled:hover .file-select-name {
+  line-height: 40px;
+  display: inline-block;
+}
+#registrationpage .field .twibboninfo {
+  margin-top: 12px;
+  font: 400 1rem/1.75rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+}
+#registrationpage .field .twibboninfo a {
+  color: #2C8857;
+}
+#registrationpage .prev {
+  margin-right: 3px;
+}
+#registrationpage .next {
+  margin-left: 3px;
+}
+#registrationpage select {
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+#registrationpage .borderr {
+  border-right: 1px dashed rgba(255, 255, 255, 0.38);
+  height: 72px;
+  position: absolute;
+  right: 52px;
+  top: 64px;
+}
+#registrationpage .progress-bar {
+  background-color: #1b2131 !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#registrationpage .step {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  height: 136px;
+}
+#registrationpage .step .step1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: right;
+  margin-right: 96px;
+}
+#registrationpage .step .step2 {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  margin-top: 2px;
+  text-align: right;
+  margin-right: 96px;
+}
+@media (max-width: 992px) {
+  #registrationpage .step .step1, #registrationpage .step .step2 {
+    display: none;
+  }
+}
+#registrationpage .step-container {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+#registrationpage .step p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #def2f1;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+#registrationpage .bullet {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  background: rgba(255, 255, 255, 0.04);
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+#registrationpage .step span img {
+  height: 32px;
+  width: 32px;
+  margin: 16px;
+}
+#registrationpage .step .check {
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+}
+#registrationpage .bullet.active {
+  background: #2C8857;
+}
+#registrationpage .step:last-child .bullet:before, #registrationpage .step:last-child .bullet:after {
+  display: none;
+}
+#registrationpage .step:last-child {
+  padding-bottom: 10px;
+}
+#registrationpage .check.active {
+  display: none;
+  color: #def2f1;
+}
+#registrationpage .step p.active {
+  color: #17252a;
+}
+@-webkit-keyframes animate {
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes animate {
+  100% {
+    transform: scaleY(1);
+  }
+}
+@media (max-width: 450px) {
+  #registrationpage {
+    /* For mobile phones: */
+  }
+  #registrationpage .container {
+    width: 345px;
+    margin-top: 64px;
+  }
+  #registrationpage .title-description {
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+    margin-top: 8px;
+  }
+  #registrationpage .bullet {
+    height: 40px;
+    width: 40px;
+  }
+  #registrationpage .bullet span img {
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+  }
+  #registrationpage .step {
+    height: 96px;
+  }
+  #registrationpage .title .breakline {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  #registrationpage .borderr {
+    height: 54px;
+    right: 42px;
+    top: 42px;
+  }
+  #registrationpage .page .title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.003em;
+    color: rgba(255, 255, 255, 0.87);
+    margin-top: 4px;
+  }
+  #registrationpage .page .titleinfo {
+    margin-top: 2px;
+  }
+  #registrationpage .page .breakform {
+    margin-top: 8px;
+  }
+  #registrationpage .page .field {
+    margin-top: 16px;
+  }
+  #registrationpage .page .label {
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+  }
+  #registrationpage .page .input {
+    height: 48px;
+    font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+  }
+  #registrationpage .page button {
+    width: 150px !important;
+    height: 48px !important;
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+  }
+  #registrationpage .page .field .submit {
+    width: 220px !important;
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+  }
+  #registrationpage .file-upload {
+    height: 48px !important;
+  }
+  #registrationpage .file-upload .file-select-button p {
+    margin: 12px !important;
+  }
+  #registrationpage .file-upload .file-select-name {
+    padding: 0px 0px !important;
+    margin-top: 4px !important;
+  }
+  #registrationpage .label,
+#registrationpage .twibboninfo {
+    font: 400 1rem/1.75rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+  }
 }/*# sourceMappingURL=style.css.map */
