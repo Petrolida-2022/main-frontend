@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// general variable
+$bg-body: #1B2845;
+$general-font: "Poppins";
+$primary-color: #28a562;
+
+@mixin default-btn {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid $primary-color;
+}
+
+@mixin btn-outline {
+  @include default-btn();
+  background-color: transparent;
+  color: $primary-color;
+}
+
+@mixin btn-fill {
+  @include default-btn();
+  background-color: $primary-color;
+  color: #fff;
+}
+
+@mixin btn-blank {
+  @include default-btn();
+  border: none;
+  background-color: transparent;
+  color: $primary-color;
+}
+
+.text-green {
+  color: $primary-color;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-body;
+  font-family: $general-font;
+  overflow-x: hidden;
+}
+
+section#hero {
+  background: url("./background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  .hero {
+    a {
+      @include btn-outline();
+      cursor: pointer;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        @include btn-fill();
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#hero {
+    .hero {
+      width: 95% !important;
+    }
+    
+    a {
+      width: 100%;
+    }
+  }
+}
+
+section#about {
+  min-height: 70vh;
+
+  .container {
+    .inner-container {
+      width: 85%;
+    }
+  }
+}
+
+section#faq {
+  min-height: 70vh;
+
+  a {
+    @include btn-outline();
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      @include btn-fill();
+      transform: scale(1.03);
+    }
+  }
+
+  .accordion-button.collapsed {
+    background: blue
+  }
+  
+  .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#faq {
+    .faq-kiri,
+    .faq-kanan {
+      width: 100% !important;
+      margin-bottom: 50px;
+    }
+  }
+}
