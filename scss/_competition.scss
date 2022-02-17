@@ -18,6 +18,18 @@
 	-o-background-size: cover;
 	height: 900px;
 }
+.herofracturing {
+  position: relative;
+background: linear-gradient(
+rgba(27, 33, 49, 0.85), 
+rgba(27, 33, 49, 1)),
+url("../img/fracturingoil.svg") no-repeat center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+height: 900px;
+}
 
 .herobisniscase {
 position: relative;
@@ -421,9 +433,13 @@ height: 900px;
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+    /* identical to box height, or 150% */
+    
     letter-spacing: 0.005em;
-    color: rgba(255, 255, 255, 0.87);
-    margin-top: 1px;
+    
+    /* White/White 2 */
+    
+    color: rgba(255, 255, 255, 0.68);
   }
     .sosmed-info{
       margin-top: 24px;

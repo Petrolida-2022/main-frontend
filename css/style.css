@@ -407,6 +407,14 @@ comingsoon-title#comingsoon .comingsoon-image {
   height: 900px;
 }
 
+.herofracturing {
+  position: relative;
+  background: linear-gradient(rgba(27, 33, 49, 0.85), #1b2131), url("../img/fracturingoil.svg") no-repeat center;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 900px;
+}
+
 .herobisniscase {
   position: relative;
   background: linear-gradient(rgba(27, 33, 49, 0.85), #1b2131), url("../img/BisnisCase.svg") no-repeat center;
@@ -800,9 +808,10 @@ comingsoon-title#comingsoon .comingsoon-image {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
+  /* identical to box height, or 150% */
   letter-spacing: 0.005em;
-  color: rgba(255, 255, 255, 0.87);
-  margin-top: 1px;
+  /* White/White 2 */
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .sosmed-info {
@@ -1633,7 +1642,6 @@ strong {
   text-align: center;
   letter-spacing: 0.003em;
   color: rgba(255, 255, 255, 0.87);
-  margin-right: -10px;
 }
 #registrationpage .field .submit {
   width: 285px;
