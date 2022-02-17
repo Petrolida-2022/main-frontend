@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// general variable
+$bg-body: #1B2845;
+$general-font: "Poppins";
+$primary-color: #28a562;
+
+@mixin default-btn {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid $primary-color;
+}
+
+@mixin btn-outline {
+  @include default-btn();
+  background-color: transparent;
+  color: $primary-color;
+}
+
+@mixin btn-fill {
+  @include default-btn();
+  background-color: $primary-color;
+  color: #fff;
+}
+
+@mixin btn-blank {
+  @include default-btn();
+  border: none;
+  background-color: transparent;
+  color: $primary-color;
+}
+
+.text-green {
+  color: $primary-color;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-body;
+  font-family: $general-font;
+  overflow-x: hidden;
+}
+
+section#hero {
+  background: url("./background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  .hero {
+    a.learn {
+      @include btn-outline();
+    }
+
+    a.register {
+      @include btn-fill();
+    }
+
+    a {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 10px 0 0;
+    }
+
+    a:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#hero {
+    .hero {
+      width: 95% !important;
+
+      a {
+        padding: 5px 30px !important;
+      }
+    }
+  }
+}
+
+section#about {
+  min-height: 80vh;
+
+  .container {
+    .inner-container {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#about {
+    .container {
+      .inner-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+section#whats-on {
+  min-height: 80vh;
+
+  .container-inner {
+    width: 85%;
+
+    .whatson-kiri {
+      width: 25%;
+
+      a {
+        color: #fff;
+        text-align: start;
+
+        &.active {
+          border-bottom: 2px solid #28a562;
+        }
+      }
+    }
+  
+    .whatson-kanan {
+      width: 75%;
+
+      .text-center {
+        padding: 10px;
+
+        img {
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#whats-on {
+    min-height: 80vh;
+  
+    .container-inner {
+      width: 95%;
+  
+      .whatson-kiri {
+        width: 100%;
+        margin-bottom: 20px;
+
+        a {
+          display: inline !important;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 97.68%);
+          border-radius: 15px;
+          margin: 10px 0;
+
+          &.active {
+            background-color: #28a562;
+            color: #fff;
+          }
+        }
+      }
+    
+      .whatson-kanan {
+        width: 100%;
+        padding: 0 !important;
+
+        .container-pembicara {
+          .text-center {
+            margin: 30px 0;
+
+            p {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#faq {
+  min-height: 80vh;
+
+  a {
+    @include btn-outline();
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      @include btn-fill();
+      transform: scale(1.03);
+    }
+  }
+
+  .accordion-item button {
+    border: 0;
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .fa-chevron-down {
+      color: #28a562;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#faq {
+    .faq-kiri,
+    .faq-kanan {
+      width: 100% !important;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+section#cta {
+  min-height: 60vh; 
+
+  a {
+    @include btn-fill();
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#cta {
+    .container {
+      width: 100% !important;
+    }
+  }
+}
+
+section#sponsors {
+  min-height: 60vh;
+
+  img {
+    margin: 10px;
+  }
+}

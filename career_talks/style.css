@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.text-green {
+  color: #28a562;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1B2845;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+section#hero {
+  background: url("./background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+section#hero .hero a.learn {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid #28a562;
+  background-color: transparent;
+  color: #28a562;
+}
+
+section#hero .hero a.register {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid #28a562;
+  background-color: #28a562;
+  color: #fff;
+}
+
+section#hero .hero a {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 10px 0 0;
+}
+
+section#hero .hero a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media screen and (max-width: 992px) {
+  section#hero .hero {
+    width: 95% !important;
+  }
+  section#hero .hero a {
+    padding: 5px 30px !important;
+  }
+}
+
+section#about {
+  min-height: 80vh;
+}
+
+section#about .container .inner-container {
+  width: 85%;
+}
+
+@media screen and (max-width: 576px) {
+  section#about .container .inner-container {
+    width: 100%;
+  }
+}
+
+section#whats-on {
+  min-height: 80vh;
+}
+
+section#whats-on .container-inner {
+  width: 85%;
+}
+
+section#whats-on .container-inner .whatson-kiri {
+  width: 25%;
+}
+
+section#whats-on .container-inner .whatson-kiri a {
+  color: #fff;
+  text-align: start;
+}
+
+section#whats-on .container-inner .whatson-kiri a.active {
+  border-bottom: 2px solid #28a562;
+}
+
+section#whats-on .container-inner .whatson-kanan {
+  width: 75%;
+}
+
+section#whats-on .container-inner .whatson-kanan .text-center {
+  padding: 10px;
+}
+
+section#whats-on .container-inner .whatson-kanan .text-center img {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  section#whats-on {
+    min-height: 80vh;
+  }
+  section#whats-on .container-inner {
+    width: 95%;
+  }
+  section#whats-on .container-inner .whatson-kiri {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section#whats-on .container-inner .whatson-kiri a {
+    display: inline !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.05)), color-stop(97.68%, rgba(255, 255, 255, 0.05)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 97.68%);
+    border-radius: 15px;
+    margin: 10px 0;
+  }
+  section#whats-on .container-inner .whatson-kiri a.active {
+    background-color: #28a562;
+    color: #fff;
+  }
+  section#whats-on .container-inner .whatson-kanan {
+    width: 100%;
+    padding: 0 !important;
+  }
+  section#whats-on .container-inner .whatson-kanan .container-pembicara .text-center {
+    margin: 30px 0;
+  }
+  section#whats-on .container-inner .whatson-kanan .container-pembicara .text-center p {
+    margin: 0 !important;
+  }
+}
+
+section#faq {
+  min-height: 80vh;
+}
+
+section#faq a {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid #28a562;
+  background-color: transparent;
+  color: #28a562;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section#faq a:hover {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid #28a562;
+  background-color: #28a562;
+  color: #fff;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+section#faq .accordion-item button {
+  border: 0;
+  width: 100%;
+  text-align: start;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#faq .accordion-item button .fa-chevron-down {
+  color: #28a562;
+}
+
+@media screen and (max-width: 768px) {
+  section#faq .faq-kiri,
+  section#faq .faq-kanan {
+    width: 100% !important;
+    margin-bottom: 50px;
+  }
+}
+
+section#cta {
+  min-height: 60vh;
+}
+
+section#cta a {
+  border: 0;
+  padding: 5px 45px;
+  border-radius: 8px;
+  border: 2px solid #28a562;
+  background-color: #28a562;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section#cta a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media screen and (max-width: 576px) {
+  section#cta .container {
+    width: 100% !important;
+  }
+}
+
+section#sponsors {
+  min-height: 60vh;
+}
+
+section#sponsors img {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */

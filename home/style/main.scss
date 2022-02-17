@@ -44,7 +44,7 @@ $primary-color: #28a562;
 body {
   background-color: $bg-body;
   font-family: $general-font;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 // nav
@@ -321,26 +321,16 @@ section#non-competitions {
       }
     }
 
-    #carouselExampleControls {
-      a {
-        &:hover {
-          img {
-            border-radius: 8px;
-            border: 2px solid $primary-color;
-          }
-        }
-      }
+    .slider {
+      .item-slider {
+        .container-text-item-slider {
+          background: rgba(255, 255, 255, 0.04);
+          border-radius: 0 0 8px 8px;
+          padding: 14px;
 
-      button {
-        i {
-          font-size: 30px;
-        }
-
-        &:hover {
-          cursor: context-menu;
-
-          i {
-            cursor: pointer;
+          a {
+            color: #fff;
+            text-decoration: none;
           }
         }
       }
@@ -360,9 +350,9 @@ section#non-competitions {
         }
       }
 
-      #carouselExampleControls {
-        width: 90% !important;
-      }
+      // .slick-prev:before, .slick-next:before { 
+      //   color: transparent !important;
+      // }
     }
   }
 }
