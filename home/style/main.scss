@@ -75,10 +75,28 @@ nav {
         @include btn-fill();
       }
     }
+
+    .btn-dropdown {
+      padding: 0 !important;
+      color: #fff !important;
+    }
+
+    .dropdown-menu {
+      li a {
+        &:hover {
+          color: #fff;
+          background-color: #1f7949;
+        }
+      }
+    }
+
+    .btn-group {
+      margin: 0 10px;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav {
     .container {
       a#logo-petrolida,
@@ -86,16 +104,15 @@ nav {
         z-index: 1;
       }
 
-      ul {
+      ul.main-ul {
         display: none !important;
       }
 
-      ul.responsive {
+      ul.main-ul.responsive {
         display: flex !important;
         flex-direction: column;
         align-items: center;
         background: $bg-body;
-        // background: red;
         margin: 0;
         padding: 0px;
         padding-top: 80px;
@@ -110,7 +127,7 @@ nav {
           margin: 0;
         }
 
-        li {
+        .li {
           margin: 10px 0;
 
           &:last-child {
@@ -350,7 +367,7 @@ section#non-competitions {
         }
       }
 
-      // .slick-prev:before, .slick-next:before { 
+      // .slick-prev:before, .slick-next:before {
       //   color: transparent !important;
       // }
     }
