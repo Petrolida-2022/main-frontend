@@ -14,12 +14,25 @@ import {
 import { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import OilRigDesign from './pages/OilRigDesign';
+import FractureDesign from './pages/FractureDesign';
+import StockTrading from './pages/StockTrading';
+import AwardingNight from './pages/AwardingNight';
+import CityTour from './pages/CityTour';
 
 function App() {
-  const location = useLocation()
+  const { pathname, hash} = useLocation()
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [location])
+    if (hash === '') {
+      window.scrollTo(0, 0)
+    } else{
+      setTimeout(() => {
+        const id = hash.replace('#', '')
+        const element = document.getElementById(id)
+        if (element) element.scrollIntoView()
+      }, 0)
+    }
+    
+  }, [pathname, hash])
   return (
     <Routes>
       <Route path='*' element={<Error/>}/>
@@ -29,6 +42,10 @@ function App() {
       <Route path='competitions/paper' element={<Paper/>}/>
       <Route path='competitions/petrosmart' element={<Petrosmart/>}/>
       <Route path='competitions/oil_rig_design' element={<OilRigDesign/>} />
+      <Route path='competitions/fracturing_fluid_design' element={<FractureDesign/>} />
+      <Route path='competitions/stock_trading' element={<StockTrading/>}/>
+      <Route path='non_competitions/city_tour' element={<CityTour/>} />
+      <Route path='awarding_night' element={<AwardingNight/>} />
     </Routes>
   );
 }

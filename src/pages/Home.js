@@ -32,9 +32,11 @@ import poster3 from "../assets/img/home/poster/poster_staf_oilrig_2021.png"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Footer from '../components/Footer';
+import { useTitle } from 'react-use';
 
 const Home = () => {
   AOS.init()
+  useTitle('Home | Petrolida')
   const [index, setIndex] = useState(0)
   const videos = [video1, video2, video3]
   const poster = [poster1, poster2, poster3]
@@ -70,9 +72,9 @@ const Home = () => {
           <h1 className="mb-3 mb-md-5 fw-bold">Utilizing <span className="text-green">sustainable</span> ideas & innovations to reinforce the <span className="text-green">future</span> of <span className="text-green">energy</span> industry</h1>
           <p className="fw-light mb-5">Explore and disclose innovation regarding today’s energy challenges through providing them a chance to achieve substantial and competitive experiences to advance their excellence.</p>
           <div className="d-md-flex justify-content-center">
-            <a href="#" className="d-none d-md-block btn-hero-first">Learn More</a>
-            <a href="#" className="d-block btn-hero-second">Register</a>
-            <a href="#" className="d-block d-md-none btn-hero-third">Learn More</a>
+            <Link to="#" className="d-none d-md-block btn-hero-first">Learn More</Link>
+            <Link to="#" className="d-block btn-hero-second">Register</Link>
+            <Link to="#" className="d-block d-md-none btn-hero-third">Learn More</Link>
           </div>
         </div>
       </section>
@@ -90,10 +92,10 @@ const Home = () => {
               <h2 className="fw-bold">Petroleum<br/>Integrated Days</h2>
             </div>
             <div className="right-video" data-aos="fade-left">
-              <a href="#" className="text-decoration-none text-white" target="_blank">
+              <Link to="#" className="text-decoration-none text-white" target="_blank">
                 <p className="fw-light mb-3">Petroleum Integrated Days (Petrolida) is the biggest annual event held by SPE ITS Student Chapter. This year’s series will be the 10th annual event.</p>
                 <p>Read More <img src={arrowRight} alt="Icon"/></p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -120,7 +122,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="p-3 col-12 col-lg-3" data-aos="fade-right">
-              <Link to="/#" className="card-competitions">
+              <Link to="competitions/fracturing_fluid_design" className="card-competitions">
                 <h3>Fracturing Fluid Design</h3>
                 <p>Create the optimal capability of fracture fluid related to the given case</p>
                 <p className="read-more">Read More <img src={arrowRight} alt="Icon"/></p>
@@ -141,11 +143,11 @@ const Home = () => {
               </Link>
             </div>
             <div className="p-3 col-12 col-lg-3" data-aos="fade-right">
-              <a href="#" className="card-competitions">
+              <Link to="competitions/stock_trading" className="card-competitions">
                 <h3>Stock Trading</h3>
                 <p>Obtain the highest profit from online trading and give arguments about Indonesia stock market</p>
                 <p className="read-more">Read More <img src={arrowRight} alt="Icon"/></p>
-              </a>
+              </Link>
             </div>
             <div className="p-3 col-12 col-lg-3" data-aos="fade-right">
               <Link to="competitions/business_case" className="card-competitions">
@@ -155,11 +157,11 @@ const Home = () => {
               </Link>
             </div>
             <div className="p-3 col-12 col-lg-3" data-aos="fade-left">
-              <a href="#" className="card-competitions" >
+              <Link to="#" className="card-competitions" >
                 <h3>Case Study</h3>
                 <p>Find the best solution for the given case problems related to the oil and gas industry</p>
                 <p className="read-more">Read More <img src={arrowRight} alt="Icon"/></p>
-              </a>
+              </Link>
             </div>
           </div>
           {/* <!-- /end content --> */}
@@ -168,7 +170,7 @@ const Home = () => {
       {/* <!-- /end competitions --> */}
 
       {/* <!-- non-competitions --> */}
-      <section id="non-competitions" className="pt-5 mb-5">
+      <section id="non-competitions" className="pt-5 mb-5" data-aos="fade-up">
         <div className="container text-white pt-5">
           <p className="text-green mb-3">Non-Competitions</p>
           <div className="d-flex justify-content-between container-non-competitions mb-5">
@@ -179,19 +181,19 @@ const Home = () => {
           <div id="carouselExampleControls" className="carousel slide w-50 mx-auto" data-bs-ride="carousel" data-aos="fade-up">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <a href="">
+                <Link to="#">
                   <img src={sliderEnterpreneur} className="img-fluid d-block mx-auto" alt="Slider"/>
-                </a>
+                </Link>
               </div>
               <div className="carousel-item">
-                <a href="">
+                <Link to="#">
                   <img src={sliderOilGas} className="img-fluid d-block mx-auto" alt="Slider"/>
-                </a>
+                </Link>
               </div>
               <div className="carousel-item">
-                <a href="">
+                <Link to="">
                   <img src={sliderTech} className="img-fluid d-block mx-auto" alt="Slider"/>
-                </a>
+                </Link>
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -207,7 +209,7 @@ const Home = () => {
       {/* <!-- /end non-competitions --> */}
 
       {/* <!-- testimonials --> */}
-      <section id="testimonials" className="d-flex align-items-center mt-5">
+      <section id="testimonials" className="d-flex align-items-center mt-5" data-aos="fade-up">
         <div className="background w-100 p-5">
           <div className="container text-white position-relative">
             <p className="text-green mb-3">Testimonials</p>

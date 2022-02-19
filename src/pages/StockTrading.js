@@ -9,31 +9,29 @@ import documentImg from "../assets/img/business-case/document.svg"
 import goldImg from "../assets/img/business-case/Gold.svg"
 import silverImg from "../assets/img/business-case/Silver.svg"
 import bronzeImg from "../assets/img/business-case/Bronze.svg"
-import favoriteImg from "../assets/img/favorite.svg"
 import accordionImg from "../assets/img/business-case/accordion.svg"
 import logo from "../assets/img/business-case/Logo-Petrolida-2022.svg" 
 import bi_line from "../assets/img/business-case/bi_line.svg"
 import ig from "../assets/img/business-case/ant-design_instagram-filled.svg"
 import linkedin from "../assets/img/business-case/bx_bxl-linkedin.svg" 
 import finalImg from "../assets/img/business-case/final.svg" 
-import pptIcon from "../assets/img/powerpoint.svg"
 import Navbar from '../components/Navbar'
 import { useTitle } from 'react-use'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const OilRigDesign = () => {
+const StockTrading = () => {
   AOS.init()
-  useTitle('Oil Rig Design Competition | Petrolida')
+  useTitle('Stock Trading Competitions | Petrolida')
   return (
     <div className='body'>
       <Navbar/>
 
-      <section className="herooilrigdesign hero">
+      <section className="herobisniscase hero">
         <div className="container">
           <div className="hero-title">
-            <h1 className="">Oil Rig Design</h1>
-            <p className="hero-desc body2 cc68">Driving sustanibility in Oil and Gas Industry. Challenge their knowledge to enchance scientific new innovation research</p>
+            <h1 className="">Stock Trading</h1>
+            <p className="hero-desc body2 cc68">Enchancing the stock market of Indonesia through the minds of the youth. Obtain the highest profit from online trading and give arguments about Indonesia stock market</p>
           </div>
           <div className="row competition-status cc87">
             <div className="col-7">
@@ -92,9 +90,9 @@ const OilRigDesign = () => {
 
       <section className="row about" data-aos="fade-up">
         <h3 className="cc87">Know About Competition</h3>
-        <p className="cc68">Oil Rig Design Competition that will be held online is a competition in which challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible platform for a specific offshore oil field. Participants are expected to make a project explanation of their semi-submersible oil rig based on what situation they had. 
+        <p className="cc68">Which should be valuable for the human race and the energy industry also to solve energy issues by providing innovative solutions to create a sustainable future in a form of a research paper. Petrolida 2022 Paper Competition aims to benefit students greatly on their critical thinking skills and push them to brainstorm ideas as visionary to better the future.
         <br/><br/>
-        This competition aims to develop participants' knowledge to overcome all challenges in the given field. In the next round, participants are also expected to make a 3D Video for the selection in favorite winner categories and prepare a presentation to be presented in front of the judges.</p>
+        Which should be valuable for the human race and the energy industry also to solve energy issues by providing innovative solutions to create a sustainable future in a form of a research paper. Petrolida 2022 Paper Competition aims to benefit students greatly on their critical thinking skills and push them to brainstorm ideas as visionary to better the future.</p>
       </section>
 
       <section className="tl" data-aos="fade-up">
@@ -120,7 +118,7 @@ const OilRigDesign = () => {
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>April 3rd 2022</p>
-                <p className="body4 cc87" style={{fontWeight: "500px"}}>Project Explanation Submission Deadline</p>
+                <p className="body4 cc87" style={{fontWeight: "500px"}}>Online Trading Phase</p>
               </div>
             </div>
             <div className="step">
@@ -129,8 +127,7 @@ const OilRigDesign = () => {
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>April 23rd 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Finalist 
-                  Announcement</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Presentation Phase</p>
               </div>
             </div>
             <div className="wraperright "><img src={wrImg} alt='wrap'/></div>
@@ -142,16 +139,16 @@ const OilRigDesign = () => {
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Competition Day</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Focus Group Discussion (Final Stage)</p>
               </div>
             </div>
             <div className="step">
               <div className="step-icon-wrap">
-                <div className="step-icon"><img src={pptIcon} alt="final"/></div>
+                <div className="step-icon"><img src={documentImg} alt="final"/></div>
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Presentation & Video Creative Submission Deadline</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Topic Release</p>
               </div>
             </div>
             <div className="step ofirst">
@@ -160,7 +157,7 @@ const OilRigDesign = () => {
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 15th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Technical Meeting & Simulation</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Finalist Announcement</p>
               </div>
             </div>
             <div className="wraperrightdwn"><img src={wrImg} alt='wrap'/></div>
@@ -202,20 +199,11 @@ const OilRigDesign = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6">
-              <div className="icon-box">
-                <img src={favoriteImg} alt="testing"/>
-                <div className="col">
-                  <h6>Favorite Winner</h6>
-                  <p className="body2">Rp 500.000</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="faq" data-aos="fade-up">
+      <section className="faq">
         <div className="container-xl">
           <p className="faq-header">FAQ</p>
           <div className="row">
@@ -352,4 +340,4 @@ const OilRigDesign = () => {
   )
 }
 
-export default OilRigDesign
+export default StockTrading

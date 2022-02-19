@@ -25,7 +25,9 @@ const Navbar = () => {
         </Link>
         <ul className={`d-flex animate__animated ${toggleNavbar && 'responsive animate__slideInLeft'}`} id="list-link-nav">
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/events">Events</Link></li>
+          <li>
+            <Link to="/#competitions">Events</Link>
+          </li>
           <li><Link to="/faq">FAQ</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/users/sign_in" className="sign-in">Sign in</Link></li>

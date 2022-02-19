@@ -16,8 +16,13 @@ import ig from "../assets/img/business-case/ant-design_instagram-filled.svg"
 import linkedin from "../assets/img/business-case/bx_bxl-linkedin.svg" 
 import finalImg from "../assets/img/business-case/final.svg" 
 import Navbar from '../components/Navbar'
+import { useTitle } from 'react-use'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Petrosmart = () => {
+  AOS.init()
+  useTitle('Petrosmart Competitions | Petrolida')
   return (
     <div className='body'>
       <Navbar/>
@@ -83,7 +88,7 @@ const Petrosmart = () => {
         </div>
       </section>
 
-      <section className="row about">
+      <section className="row about" data-aos="fade-up">
         <h3 className="cc87">Know About Competition</h3>
         <p className="cc68">Petrosmart Competition is an online quick-fire rounds competition where teams  from various universities compete 
         against one another to challenge their knowledge by answering 
@@ -98,13 +103,13 @@ const Petrosmart = () => {
         competition.</p>
       </section>
 
-      <section className="tl">
+      <section className="tl" data-aos="fade-up">
         <div className="container stage text-center">
           <h3> Competition Stage</h3>
           <p className="text-center">This competition will be divided into three stages: Online Preliminary, Semifinal Round, and Final Round</p>
         </div>
         <div className="timeline container">
-          <div className="vlbusinesscase"></div>
+          <div className="vlpetrosmart"></div>
           <div className="steps d-flex flex-wrap flex-sm-nowrap justify-content-end padding-top-2x padding-bottom-1x">
             <div className="step completed">
               <div className="step-icon-wrap">
@@ -142,7 +147,7 @@ const Petrosmart = () => {
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Final ROund</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Final Round</p>
               </div>
             </div>
             <div className="step ofirst">
@@ -159,7 +164,7 @@ const Petrosmart = () => {
         </div>
       </section>
 
-      <section className="competition-price">
+      <section className="competition-price" data-aos="fade-up">
         <div className="container-sm mx-auto">
           <div className="text-center">
             <h3 className="title cc87">Competition Price</h3>
@@ -197,7 +202,7 @@ const Petrosmart = () => {
         </div>
       </section>
 
-      <section className="faq">
+      <section className="faq" data-aos="fade-up">
         <div className="container-xl">
           <p className="faq-header">FAQ</p>
           <div className="row">

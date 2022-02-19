@@ -17,8 +17,13 @@ import bi_line from "../assets/img/business-case/bi_line.svg"
 import ig from "../assets/img/business-case/ant-design_instagram-filled.svg"
 import linkedin from "../assets/img/business-case/bx_bxl-linkedin.svg" 
 import Navbar from '../components/Navbar'
+import { useTitle } from 'react-use'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const BusinessCase = () => {
+  AOS.init()
+  useTitle('Business Case Competition | Petrolida')
   return (
     <div className='body' style={{position: 'relative'}}>
       <Navbar/>
@@ -84,12 +89,12 @@ const BusinessCase = () => {
         </div>
       </section>
 
-      <section className="row about">
+      <section className="row about" data-aos="fade-up">
         <h3 className="cc87">Know About Competition</h3>
         <p className="cc68">Business Case Competition is an international competition that primarily focuses on solving real business case paint points that happened in the world. With some advantages for your company such as brand awareness and publication especially in the logistic area, <br/><br/>we hope that our collaboration in structuring the “case” can engage and inspire youth that has an interest in Business Case Competition.</p>
       </section>
 
-      <section className="tl">
+      <section className="tl" data-aos="fade-up">
         <div className="container stage text-center">
           <h3> Competition Stage</h3>
           <p className="text-center">This competition will be divided into three stages: Online Preliminary, Semifinal Round, and Final Round</p>
@@ -185,7 +190,7 @@ const BusinessCase = () => {
         </div>
       </section>
 
-      <section className="competition-price">
+      <section className="competition-price" data-aos="fade-up">
         <div className="container-sm mx-auto">
           <div className="text-center">
             <h3 className="title cc87">Competition Price</h3>

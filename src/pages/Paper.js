@@ -16,8 +16,13 @@ import ig from "../assets/img/business-case/ant-design_instagram-filled.svg"
 import linkedin from "../assets/img/business-case/bx_bxl-linkedin.svg" 
 import finalImg from "../assets/img/business-case/final.svg" 
 import Navbar from '../components/Navbar'
+import { useTitle } from 'react-use'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Paper = () => {
+  AOS.init()
+  useTitle('Paper Competitions | Petrolida')
   return (
     <div className='body'>
       <Navbar/>
@@ -83,20 +88,20 @@ const Paper = () => {
         </div>
       </section>
 
-      <section className="row about">
+      <section className="row about" data-aos="fade-up">
         <h3 className="cc87">Know About Competition</h3>
         <p className="cc68">Which should be valuable for the human race and the energy industry also to solve energy issues by providing innovative solutions to create a sustainable future in a form of a research paper. Petrolida 2022 Paper Competition aims to benefit students greatly on their critical thinking skills and push them to brainstorm ideas as visionary to better the future.
         <br/><br/>
         Which should be valuable for the human race and the energy industry also to solve energy issues by providing innovative solutions to create a sustainable future in a form of a research paper. Petrolida 2022 Paper Competition aims to benefit students greatly on their critical thinking skills and push them to brainstorm ideas as visionary to better the future.</p>
       </section>
 
-      <section className="tl">
+      <section className="tl" data-aos="fade-up">
         <div className="container stage text-center">
           <h3> Competition Stage</h3>
           <p className="text-center">This competition will be divided into three stages: Online Preliminary, Semifinal Round, and Final Round</p>
         </div>
         <div className="timeline container">
-          <div className="vlbusinesscase"></div>
+          <div className="vlpaper"></div>
           <div className="steps d-flex flex-wrap flex-sm-nowrap justify-content-end padding-top-2x padding-bottom-1x">
             <div className="step completed">
               <div className="step-icon-wrap">
@@ -161,7 +166,7 @@ const Paper = () => {
         </div>
       </section>
 
-      <section className="competition-price">
+      <section className="competition-price" data-aos="fade-up">
         <div className="container-sm mx-auto">
           <div className="text-center">
             <h3 className="title cc87">Competition Price</h3>
@@ -199,7 +204,7 @@ const Paper = () => {
         </div>
       </section>
 
-      <section className="faq">
+      <section className="faq" data-aos="fade-up">
         <div className="container-xl">
           <p className="faq-header">FAQ</p>
           <div className="row">

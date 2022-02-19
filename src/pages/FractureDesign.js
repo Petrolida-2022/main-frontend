@@ -2,10 +2,12 @@ import React from 'react'
 import '../assets/css/style.css'
 import emojioneImg from "../assets/img/business-case/emojione-monotone_trophy.svg"
 import foldImg from "../assets/img/business-case/fold.svg"
-import anounceImg from "../assets/img/business-case/anounce.svg"
+import mailImg from "../assets/img/business-case/mail.svg"
 import wrImg from "../assets/img/business-case/wr1.png"
 import tmImg from "../assets/img/business-case/technicalmeeting.svg"
+import speakerImg from "../assets/img/speaker.svg"
 import documentImg from "../assets/img/business-case/document.svg"
+import coachingImg from "../assets/img/people-group.svg"
 import goldImg from "../assets/img/business-case/Gold.svg"
 import silverImg from "../assets/img/business-case/Silver.svg"
 import bronzeImg from "../assets/img/business-case/Bronze.svg"
@@ -22,18 +24,18 @@ import { useTitle } from 'react-use'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const OilRigDesign = () => {
+const FractureDesign = () => {
   AOS.init()
-  useTitle('Oil Rig Design Competition | Petrolida')
+  useTitle('Fracturing Fluid Design Competition | Petrolida')
   return (
     <div className='body'>
       <Navbar/>
 
-      <section className="herooilrigdesign hero">
+      <section className="herofracturedesign hero">
         <div className="container">
           <div className="hero-title">
-            <h1 className="">Oil Rig Design</h1>
-            <p className="hero-desc body2 cc68">Driving sustanibility in Oil and Gas Industry. Challenge their knowledge to enchance scientific new innovation research</p>
+            <h1 className="">Fracturing Fluid Design</h1>
+            <p className="hero-desc body2 cc68">Integrating the capability of fracture fluid to stimulate well productivity by utilizing sustainable ideas and innovation for the future.</p>
           </div>
           <div className="row competition-status cc87">
             <div className="col-7">
@@ -42,7 +44,7 @@ const OilRigDesign = () => {
             </div>
             <div className="col-5">
               <p className="cc87">Prize Pool</p>
-              <p className="body5 cc87"><img src={emojioneImg} alt="Thropy"/>   IDR 6,000,000</p>
+              <p className="body5 cc87"><img src={emojioneImg} alt="Thropy"/>   IDR 6,500,000</p>
             </div>
           </div>
           <div className="row button-info">
@@ -92,9 +94,10 @@ const OilRigDesign = () => {
 
       <section className="row about" data-aos="fade-up">
         <h3 className="cc87">Know About Competition</h3>
-        <p className="cc68">Oil Rig Design Competition that will be held online is a competition in which challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible platform for a specific offshore oil field. Participants are expected to make a project explanation of their semi-submersible oil rig based on what situation they had. 
-        <br/><br/>
-        This competition aims to develop participants' knowledge to overcome all challenges in the given field. In the next round, participants are also expected to make a 3D Video for the selection in favorite winner categories and prepare a presentation to be presented in front of the judges.</p>
+        <p className="cc68"> 
+        The Fracturing Fluid Design Competition was first held in 2018 and credited with being the pioneer in the region of Pacific Asia. This competition will challenge all delegates to create the optimal capability of fracture fluid related to the given case.<br/><br/>
+        Each team will present their findings directly to the judges and the most  optimal, including performance feasibility, environmental effects, and economic consideration, will have the most points.
+        </p>
       </section>
 
       <section className="tl" data-aos="fade-up">
@@ -103,7 +106,7 @@ const OilRigDesign = () => {
           <p className="text-center">This competition will be divided into three stages: Online Preliminary, Semifinal Round, and Final Round</p>
         </div>
         <div className="timeline container">
-          <div className="vlpaper"></div>
+          <div className="vlbusinesscase"></div>
           <div className="steps d-flex flex-wrap flex-sm-nowrap justify-content-end padding-top-2x padding-bottom-1x">
             <div className="step completed">
               <div className="step-icon-wrap">
@@ -116,54 +119,75 @@ const OilRigDesign = () => {
             </div>
             <div className="step">
               <div className="step-icon-wrap">
-                <div className="step-icon "><img src={documentImg} alt="mail"/></div>
+                <div className="step-icon "><img src={mailImg} alt="mail"/></div>
               </div>
               <div className="information">
-                <p className="body4 cc68" style={{fontWeight: 'normal'}}>April 3rd 2022</p>
-                <p className="body4 cc87" style={{fontWeight: "500px"}}>Project Explanation Submission Deadline</p>
+                <p className="body4 cc68" style={{fontWeight: 'normal'}}>March 1st 2022</p>
+                <p className="body4 cc87" style={{fontWeight: "500px"}}>Case Distribution</p>
               </div>
             </div>
             <div className="step">
               <div className="step-icon-wrap">
-                <div className="step-icon "><img src={anounceImg} alt="anounce"/></div>
+                <div className="step-icon "><img src={coachingImg} alt="anounce"/></div>
               </div>
               <div className="information">
-                <p className="body4 cc68" style={{fontWeight: 'normal'}}>April 23rd 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Finalist 
-                  Announcement</p>
+                <p className="body4 cc68" style={{fontWeight: 'normal'}}>March 12th 2022</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Coaching</p>
               </div>
             </div>
             <div className="wraperright "><img src={wrImg} alt='wrap'/></div>
           </div>
           <div className="steps d-flex flex-wrap flex-sm-nowrap justify-content-end padding-bottom-1x">
+            <div className="wraperleft "><img src={wrImg} alt='wrap'/></div>
             <div className="step olast">
               <div className="step-icon-wrap ">
-                <div className="step-icon olast"><img src={finalImg} alt="final"/></div>
+                <div className="step-icon olast"><img src={pptIcon} alt="final"/></div>
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Competition Day</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>PowerPoint File & Infographic Submission</p>
               </div>
             </div>
             <div className="step">
               <div className="step-icon-wrap">
-                <div className="step-icon"><img src={pptIcon} alt="final"/></div>
+                <div className="step-icon"><img src={speakerImg} alt="final"/></div>
               </div>
               <div className="information">
-                <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Presentation & Video Creative Submission Deadline</p>
+                <p className="body4 cc68" style={{fontWeight: 'normal'}}>April 26th 2022</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Finalist Announcement</p>
               </div>
             </div>
             <div className="step ofirst">
               <div className="step-icon-wrap ">
-                <div className="step-icon"><img src={tmImg} alt="technicalmeeting"/></div>
+                <div className="step-icon"><img src={documentImg} alt="technicalmeeting"/></div>
               </div>
               <div className="information">
                 <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 15th 2022</p>
-                <p className="body4 cc87" style={{fontWeight: '500px'}}>Technical Meeting & Simulation</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Preliminary Round Submission</p>
               </div>
             </div>
             <div className="wraperrightdwn"><img src={wrImg} alt='wrap'/></div>
+          </div>
+          <div className="steps d-flex flex-wrap flex-sm-nowrap justify-content-start padding-top-2x padding-bottom-1x">
+            <div className="wraperleftdwn "><img src={wrImg} alt='wrap'/></div>
+            <div className="step">
+              <div className="step-icon-wrap">
+                <div className="step-icon"><img src={tmImg} alt="folder"/></div>
+              </div>
+              <div className="information">
+                <p className="body4 cc68 " style={{fontWeight: 'normal'}}>May 14th - May 20th 2022</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Techinal Meeting</p>
+              </div>
+            </div>
+            <div className="step">
+              <div className="step-icon-wrap">
+                <div className="step-icon "><img src={finalImg} alt="mail"/></div>
+              </div>
+              <div className="information">
+                <p className="body4 cc68" style={{fontWeight: 'normal'}}>May 21st 2022</p>
+                <p className="body4 cc87" style={{fontWeight: '500px'}}>Grand Final (Pitch Presentation)</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -234,7 +258,7 @@ const OilRigDesign = () => {
                 <div className="accordion-item">
                   <h6 className="accordion-header">
                     <button className="accordion-button collapsed" aria-expanded="true" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                      What is the theme of this competition?
+                    In what scheme Fracturing Fluid Design Competition 2022 will be held, and how many stages?
                       <span><img src={accordionImg} alt='wrap'/></span>
                     </button>
                   </h6>
@@ -253,7 +277,7 @@ const OilRigDesign = () => {
                 <div className="accordion-item">
                   <h6 className="accordion-header">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                      Can I join as an individually?
+                    What are the regulations to form a team?
                       <span><img src={accordionImg} alt='wrap'/></span>
                     </button>
                   </h6>
@@ -267,7 +291,7 @@ const OilRigDesign = () => {
                 <div className="accordion-item">
                   <h6 className="accordion-header">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                      Can a team member consist of different universities and majors?
+                    Is it necessary for each team to pay in full upfront?
                       <span><img src={accordionImg} alt='wrap'/></span>
                     </button>
                   </h6>
@@ -352,4 +376,4 @@ const OilRigDesign = () => {
   )
 }
 
-export default OilRigDesign
+export default FractureDesign
