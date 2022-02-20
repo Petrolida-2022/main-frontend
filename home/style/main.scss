@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 // general variable
-$bg-body: #0f131e;
+$bg-body: #1B2845;
 $general-font: "Poppins";
 $primary-color: #28a562;
 
 @mixin default-btn {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid $primary-color;
 }
 
@@ -33,6 +33,16 @@ $primary-color: #28a562;
 
 .text-green {
   color: $primary-color;
+}
+
+@mixin white2 {
+  color: #fff;
+  opacity: 68%;
+  font-size: 1rem;
+}
+
+.white2 {
+  @include white2();
 }
 
 * {
@@ -149,8 +159,8 @@ section#hero {
     height: 382px;
     background: linear-gradient(235.88deg, #20624c -5.77%, rgba(32, 98, 76, 0.4) 134.71%);
     filter: blur(100px);
-    top: -5%;
-    right: -5%;
+    top: 0%;
+    right: 0%;
     z-index: -1;
   }
 
@@ -167,6 +177,11 @@ section#hero {
 
   .container {
     width: 70%;
+
+    h1 {
+      font-weight: bold;
+      font-size: 56px;
+    }
 
     a {
       margin: 0 10px;
@@ -192,8 +207,18 @@ section#hero {
   section#hero {
     text-align: start !important;
 
+    #floatingHero1,
+    #floatingHero2 {
+      width: 300px;
+      height: 300px;
+    }
+
     .container {
       width: 100%;
+
+      h1 {
+        font-size: 30px;
+      }
 
       a {
         text-align: center;
@@ -245,6 +270,10 @@ section#video {
     z-index: -1;
     bottom: 10%;
     right: 10%;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   iframe {
@@ -301,6 +330,13 @@ section#competitions {
       cursor: pointer;
       padding: 20px;
       transition: 0.3s all ease;
+      // color: red;
+
+      p {
+        &:nth-of-type(1) {
+          @include white2();
+        }
+      }
 
       .read-more {
         position: absolute;
@@ -344,6 +380,10 @@ section#non-competitions {
           background: rgba(255, 255, 255, 0.04);
           border-radius: 0 0 8px 8px;
           padding: 14px;
+
+          p {
+            @include white2();
+          }
 
           a {
             color: #fff;
@@ -436,10 +476,16 @@ section#testimonials {
       .container {
         padding: 0 0 100px 0;
 
+        p {
+          &:nth-of-type(2) {
+            margin-bottom: 30px !important;
+          }
+        }
+
         video {
           left: 50%;
           transform: translateX(-50%);
-          top: 80%;
+          top: 86%;
         }
 
         &::before {
@@ -502,10 +548,3 @@ section#sponsors {
   }
 }
 // end sponsors
-
-// footer
-footer {
-  min-height: 80vh;
-  // border: 2px solid red;
-}
-// end footer

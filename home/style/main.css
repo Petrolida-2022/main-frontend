@@ -3,6 +3,12 @@
   color: #28a562;
 }
 
+.white2 {
+  color: #fff;
+  opacity: 68%;
+  font-size: 1rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,7 +17,7 @@
 }
 
 body {
-  background-color: #0f131e;
+  background-color: #1B2845;
   font-family: "Poppins";
   overflow-x: hidden !important;
 }
@@ -38,7 +44,7 @@ nav ul li a:hover {
 nav ul li a.sign-in {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #28a562;
   background-color: transparent;
   color: #28a562;
@@ -48,7 +54,7 @@ nav ul li a.sign-in {
 nav ul li a.sign-in:hover {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #28a562;
   background-color: #28a562;
   color: #fff;
@@ -87,7 +93,7 @@ nav ul .btn-group {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #0f131e;
+    background: #1B2845;
     margin: 0;
     padding: 0px;
     padding-top: 80px;
@@ -119,8 +125,8 @@ section#hero #floatingHero1 {
   background: linear-gradient(235.88deg, #20624c -5.77%, rgba(32, 98, 76, 0.4) 134.71%);
   -webkit-filter: blur(100px);
           filter: blur(100px);
-  top: -5%;
-  right: -5%;
+  top: 0%;
+  right: 0%;
   z-index: -1;
 }
 
@@ -141,6 +147,11 @@ section#hero .container {
   width: 70%;
 }
 
+section#hero .container h1 {
+  font-weight: bold;
+  font-size: 56px;
+}
+
 section#hero .container a {
   margin: 0 10px;
   -webkit-transition: all 0.3s ease;
@@ -156,7 +167,7 @@ section#hero .container a:hover {
 section#hero .container a.btn-hero-first {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #28a562;
   background-color: transparent;
   color: #28a562;
@@ -165,7 +176,7 @@ section#hero .container a.btn-hero-first {
 section#hero .container a.btn-hero-second {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #28a562;
   background-color: #28a562;
   color: #fff;
@@ -175,8 +186,16 @@ section#hero .container a.btn-hero-second {
   section#hero {
     text-align: start !important;
   }
+  section#hero #floatingHero1,
+  section#hero #floatingHero2 {
+    width: 300px;
+    height: 300px;
+  }
   section#hero .container {
     width: 100%;
+  }
+  section#hero .container h1 {
+    font-size: 30px;
   }
   section#hero .container a {
     text-align: center;
@@ -195,7 +214,7 @@ section#hero .container a.btn-hero-second {
   section#hero .container a.btn-hero-third {
     border: 0;
     padding: 5px 45px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 2px solid #28a562;
     border: none;
     background-color: transparent;
@@ -204,7 +223,7 @@ section#hero .container a.btn-hero-second {
   section#hero .container a.btn-hero-third:focus {
     border: 0;
     padding: 5px 45px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 2px solid #28a562;
     background-color: transparent;
     color: #28a562;
@@ -235,6 +254,10 @@ section#video #floatingVideo2 {
   z-index: -1;
   bottom: 10%;
   right: 10%;
+}
+
+section#video h2 {
+  font-size: 32px;
 }
 
 section#video iframe {
@@ -286,6 +309,12 @@ section#competitions .container-content-competitions .card-competitions {
   transition: 0.3s all ease;
 }
 
+section#competitions .container-content-competitions .card-competitions p:nth-of-type(1) {
+  color: #fff;
+  opacity: 68%;
+  font-size: 1rem;
+}
+
 section#competitions .container-content-competitions .card-competitions .read-more {
   position: absolute;
   bottom: 2%;
@@ -318,6 +347,12 @@ section#non-competitions .container .slider .item-slider .container-text-item-sl
   background: rgba(255, 255, 255, 0.04);
   border-radius: 0 0 8px 8px;
   padding: 14px;
+}
+
+section#non-competitions .container .slider .item-slider .container-text-item-slider p {
+  color: #fff;
+  opacity: 68%;
+  font-size: 1rem;
 }
 
 section#non-competitions .container .slider .item-slider .container-text-item-slider a {
@@ -393,11 +428,14 @@ section#testimonials .background .container::before {
   section#testimonials .background .container {
     padding: 0 0 100px 0;
   }
+  section#testimonials .background .container p:nth-of-type(2) {
+    margin-bottom: 30px !important;
+  }
   section#testimonials .background .container video {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 80%;
+    top: 86%;
   }
   section#testimonials .background .container::before {
     top: -5%;
@@ -416,7 +454,7 @@ section#cta .container {
 section#cta .container button {
   border: 0;
   padding: 5px 45px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #28a562;
   background-color: #28a562;
   color: #fff;
@@ -449,9 +487,5 @@ section#sponsors {
   section#sponsors .row .col-6 {
     margin-bottom: 30px;
   }
-}
-
-footer {
-  min-height: 80vh;
 }
 /*# sourceMappingURL=main.css.map */
