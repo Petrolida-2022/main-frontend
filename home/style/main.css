@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #1B2845;
+  background-color: #1b2845;
   font-family: "Poppins";
   overflow-x: hidden !important;
 }
@@ -93,7 +93,7 @@ nav ul .btn-group {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #1B2845;
+    background: #1b2845;
     margin: 0;
     padding: 0px;
     padding-top: 80px;
@@ -481,6 +481,7 @@ section#cta .container button:hover {
 
 section#sponsors {
   min-height: 80vh;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {

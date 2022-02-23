@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 // general variable
-$bg-body: #1B2845;
+$bg-body: #1b2845;
 $general-font: "Poppins";
 $primary-color: #28a562;
 
@@ -536,6 +536,7 @@ section#cta {
 // sponsors
 section#sponsors {
   min-height: 80vh;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
