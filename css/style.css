@@ -501,14 +501,14 @@ p,
   background-color: #2c8857;
 }
 
-#regis-container .form-container .form-step {
+.form-step {
   font: 400 0.875rem/1.5rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
   color: rgba(255, 255, 255, 0.38);
 }
 
-#regis-container .form-container .form-title {
+.form-title {
   font: 600 1.5rem/2.125rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
@@ -516,25 +516,25 @@ p,
 }
 
 @media screen and (max-width: 576px) {
-  #regis-container .form-container .form-title {
+  .form-title {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 0;
   }
 }
 
-#regis-container .form-container .form-instruction {
+.form-instruction {
   font: 400 0.875rem/1.5rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
   color: rgba(255, 255, 255, 0.38);
 }
 
-#regis-container .form-container .form-line {
+.form-line {
   color: rgba(255, 255, 255, 0.25);
 }
 
-#regis-container .form-container .form-section {
+.form-section {
   font: 500 1.25rem/1.875rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
@@ -542,14 +542,16 @@ p,
 }
 
 @media screen and (max-width: 576px) {
-  #regis-container .form-container .form-section {
+  .form-section {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 0;
   }
 }
 
-#regis-container .form-container .form-label {
+.form-label {
+  position: relative;
+  margin-bottom: 0;
   font: 400 1rem/1.75rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
@@ -557,16 +559,15 @@ p,
 }
 
 @media screen and (max-width: 576px) {
-  #regis-container .form-container .form-label {
+  .form-label {
     font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
     letter-spacing: 0.003em;
     color: inherit;
-    margin-bottom: 0;
   }
 }
 
-#regis-container .form-container .form-input {
-  margin: 0.5rem 0;
+.form-input {
+  margin: 0.5rem 0 0;
   display: block;
   width: 100%;
   padding: 1rem 2rem;
@@ -576,23 +577,23 @@ p,
   border-radius: 5px;
 }
 
-#regis-container .form-container .form-input::placeholder {
+.form-input::placeholder {
   font: 400 0.875rem/1.5rem "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: inherit;
   color: rgba(255, 255, 255, 0.38);
 }
 
-#regis-container .form-container .form-input:focus {
+.form-input:focus {
   border: 1px solid rgba(44, 136, 87, 0.68);
 }
 
-#regis-container .form-container .form-input:focus::placeholder {
+.form-input:focus::placeholder {
   color: rgba(44, 136, 87, 0.68);
 }
 
 @media screen and (max-width: 576px) {
-  #regis-container .form-container .form-input {
+  .form-input {
     font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
     letter-spacing: 0.003em;
     color: inherit;
@@ -600,7 +601,7 @@ p,
   }
 }
 
-#regis-container .form-container .form-control {
+.form-control {
   margin: 0.5rem 0;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.38);
@@ -612,22 +613,65 @@ p,
   color: rgba(255, 255, 255, 0.38);
 }
 
-#regis-container .form-container .form-button {
+.form-button {
   padding: 1rem 3rem;
   font: 600 16px/16px "Poppins", sans-serif;
   letter-spacing: 0.003em;
   color: rgba(255, 255, 255, 0.87);
   background-color: #2c8857;
-  border: none;
+  border: 1px solid #2c8857;
   border-radius: 5px;
+  transition: ease-in-out 0.3s;
 }
 
 @media screen and (max-width: 576px) {
-  #regis-container .form-container .form-button {
+  .form-button {
     font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
     letter-spacing: 0.003em;
     color: inherit;
     padding: 0.75rem 2rem;
   }
+}
+
+.form-button:hover {
+  background-color: transparent;
+  color: #2c8857;
+}
+
+.form-link {
+  color: #2c8857;
+}
+
+#loginPage {
+  padding-top: 72px;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  #loginPage {
+    align-items: flex-start;
+  }
+}
+
+#loginPage .login-title {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#loginPage .login-desc {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+#loginPage .login-image {
+  position: absolute;
+  bottom: -8rem;
+  left: -8rem;
+}
+
+#loginPage .form {
+  max-width: 450px;
 }
 /*# sourceMappingURL=style.css.map */
