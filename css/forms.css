@@ -13,6 +13,7 @@ body{
 .card-body{
     color: white;
     background-color: #1b2131;
+    border: none;
 }
 .deskripsi{
     font: 400 1rem/1.75rem "Poppins";
