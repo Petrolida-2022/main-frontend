@@ -133,8 +133,15 @@ table {
   border-spacing: 0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  outline: 0 !important;
+}
+
 body {
-  background: #1b2131;
+  background: #1b2845;
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -406,5 +413,221 @@ p,
   text-align: center;
   letter-spacing: 0.003em;
   color: #2c8857;
+}
+
+#regis-header {
+  margin-top: 4rem;
+}
+
+#regis-header .header-title {
+  font: 600 1.875rem/2.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#regis-header .header-desc {
+  font: 400 1rem/1.75rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+#regis-header .header-line {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+#regis-container .form-indicator {
+  position: relative;
+}
+
+#regis-container .form-indicator .indicator {
+  margin-bottom: 72px;
+}
+
+#regis-container .form-indicator .indicator-dashed {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  z-index: -1;
+  transform: translateY(-50%);
+  height: 72px;
+  width: 1px;
+  background-color: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-indicator .indicator-dashed {
+    right: 50%;
+  }
+}
+
+#regis-container .form-indicator .indicator-name {
+  font: 500 18px/27px "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#regis-container .form-indicator .indicator-desc {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+#regis-container .form-indicator .indicator-image {
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-indicator .indicator-image {
+    width: 40px;
+    height: 40px;
+  }
+  #regis-container .form-indicator .indicator-image img {
+    width: 24px;
+  }
+}
+
+#regis-container .form-indicator .indicator-image.active {
+  background-color: #2c8857;
+}
+
+#regis-container .form-container .form-step {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+#regis-container .form-container .form-title {
+  font: 600 1.5rem/2.125rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-container .form-title {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+}
+
+#regis-container .form-container .form-instruction {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+#regis-container .form-container .form-line {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+#regis-container .form-container .form-section {
+  font: 500 1.25rem/1.875rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-container .form-section {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+}
+
+#regis-container .form-container .form-label {
+  font: 400 1rem/1.75rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-container .form-label {
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+    margin-bottom: 0;
+  }
+}
+
+#regis-container .form-container .form-input {
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#regis-container .form-container .form-input::placeholder {
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+#regis-container .form-container .form-input:focus {
+  border: 1px solid rgba(44, 136, 87, 0.68);
+}
+
+#regis-container .form-container .form-input:focus::placeholder {
+  color: rgba(44, 136, 87, 0.68);
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-container .form-input {
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+#regis-container .form-container .form-control {
+  margin: 0.5rem 0;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font: 400 0.875rem/1.5rem "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+#regis-container .form-container .form-button {
+  padding: 1rem 3rem;
+  font: 600 16px/16px "Poppins", sans-serif;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2c8857;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #regis-container .form-container .form-button {
+    font: 400 0.9375rem/1.5625rem "Poppins", sans-serif;
+    letter-spacing: 0.003em;
+    color: inherit;
+    padding: 0.75rem 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

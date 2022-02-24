@@ -1,0 +1,155 @@
+#regis-header {
+  margin-top: 4rem;
+  .header {
+    &-title {
+      @include heading5;
+      color: $white-primary;
+    }
+    &-desc {
+      @include body2;
+      color: $white-variant2;
+    }
+    &-line {
+      color: rgba(255, 255, 255, 0.25);
+    }
+  }
+}
+
+#regis-container {
+  .form-indicator {
+    position: relative;
+    .indicator {
+      margin-bottom: 72px;
+      &-dashed {
+        position: absolute;
+        top: 50%;
+        right: 32px;
+        z-index: -1;
+        transform: translateY(-50%);
+        height: 72px;
+        width: 1px;
+        background-color: transparent;
+        border: 1px dashed rgba(255, 255, 255, 0.18);
+        @media screen and (max-width: 576px) {
+          right: 50%;
+        }
+      }
+      &-name {
+        font: 500 18px/27px $font-poppins;
+        letter-spacing: 0.003em;
+        color: $white-primary;
+      }
+      &-desc {
+        @include body4;
+        color: $white-variant3;
+      }
+      &-image {
+        cursor: pointer;
+        width: 64px;
+        height: 64px;
+        background-color: $white-transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 576px) {
+          width: 40px;
+          height: 40px;
+          img {
+            width: 24px;
+          }
+        }
+        &.active {
+          background-color: $green-primary;
+        }
+      }
+    }
+  }
+  .form-container {
+    .form {
+      &-step {
+        @include body4;
+        color: $white-variant3;
+      }
+      &-title {
+        @include heading6;
+        color: $white-primary;
+        @media screen and (max-width: 576px) {
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 0;
+        }
+      }
+      &-instruction {
+        @include body4;
+        color: $white-variant3;
+      }
+      &-line {
+        color: rgba(255, 255, 255, 0.25);
+      }
+      &-section {
+        @include heading7;
+        color: $white-primary;
+        @media screen and (max-width: 576px) {
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 0;
+        }
+      }
+      &-label {
+        @include body2;
+        color: $white-primary;
+        @media screen and (max-width: 576px) {
+          @include body3;
+          margin-bottom: 0;
+        }
+      }
+      &-input {
+        margin: 0.5rem 0;
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.38);
+        box-sizing: border-box;
+        border-radius: 5px;
+        &::placeholder {
+          @include body4;
+          color: $white-variant3;
+        }
+        &:focus {
+          border: 1px solid rgba(44, 136, 87, 0.68);
+          &::placeholder {
+            color: $green-variant3;
+          }
+        }
+        @media screen and (max-width: 576px) {
+          @include body3;
+          padding: 0.5rem 1.5rem;
+        }
+      }
+      &-control {
+        margin: 0.5rem 0;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.38);
+        box-sizing: border-box;
+        border-radius: 5px;
+        @include body4;
+        color: $white-variant3;
+      }
+      &-button {
+        padding: 1rem 3rem;
+        font: 600 16px/16px $font-poppins;
+        letter-spacing: 0.003em;
+        color: $white-primary;
+        background-color: $green-primary;
+        border: none;
+        border-radius: 5px;
+        @media screen and (max-width: 576px) {
+          @include body3;
+          padding: 0.75rem 2rem;
+        }
+      }
+    }
+  }
+}
