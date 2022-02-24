@@ -137,6 +137,15 @@
     border-radius: 5px;
     @include body4;
     color: $white-variant3;
+    &:focus {
+      border: 1px solid rgba(44, 136, 87, 0.68);
+      outline: none !important;
+      background-color: transparent;
+      color: $green-variant3;
+      &::placeholder {
+        color: $green-variant3;
+      }
+    }
   }
   &-button {
     padding: 1rem 3rem;

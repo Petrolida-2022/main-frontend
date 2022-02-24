@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo-only.png" type="image/x-icon">
+
+  <title>Register for Oil Rig Design Competition - Petrolida 2022</title>
+</head>
+
+<body>
+
+  <header id="regis-header">
+    <div class="container">
+      <h1 class="header-title my-2">Register for Oil Rig Design Competition</h1>
+      <p class="header-desc">Follow the simple steps to complete your registration</p>
+      <hr class="header-line">
+    </div>
+  </header>
+
+  <section id="regis-container">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-2 col-3">
+          <div class="form-indicator">
+            <div class="indicator d-flex align-items-center">
+              <div class="flex-grow-1 d-none d-md-block">
+                <h4 class="text-end indicator-name">Information</h4>
+                <p class="text-end indicator-desc">Team Information</p>
+              </div>
+              <div id="informationIndicator" class="indicator-image ms-md-4 mx-auto active">
+                <img class="d-block" src="img/user-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="indicator d-flex align-items-center">
+              <div class="flex-grow-1 d-none d-md-block">
+                <h4 class="text-end indicator-name">Documents</h4>
+                <p class="text-end indicator-desc">Browse and Upload</p>
+              </div>
+              <div id="documentsIndicator" class="indicator-image ms-md-4 mx-auto">
+                <img class="d-block" src="img/browse-icon.svg" alt="">
+              </div>
+            </div>
+            <div class="indicator-dashed"></div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 col-9">
+          <form action="" method="post">
+            <!-- Information Form -->
+            <div id="informationForm" class="form-container" style="display: block;">
+              <span class="form-step body4">Step 1/2</span>
+              <h2 class="form-title h6">Let's start with your team</h2>
+              <p class="form-instruction body4">Please fill in the details below</p>
+              <hr class="form-line">
+              <!-- First Form -->
+              <div id="firstForm" style="display: block;">
+                <h3 class="form-section h7">Team Leader*</h3>
+                <div class="my-3">
+                  <label for="leader_name" class="form-label">Full Name</label>
+                  <input required type="text" class="form-input" id="leader_name" name="leader_name" tabindex="1" autofocus placeholder="Enter your full name">
+                </div>
+                <div class="my-3">
+                  <label for="leader_email" class="form-label">Email</label>
+                  <input required type="email" class="form-input" id="leader_email" name="leader_email" tabindex="2" placeholder="Enter your email">
+                </div>
+                <div class="my-3">
+                  <label for="team_name" class="form-label">Team Name</label>
+                  <input required type="text" class="form-input" id="team_name" name="team_name" tabindex="3" placeholder="Enter your team name">
+                </div>
+                <div class="my-3">
+                  <label for="university" class="form-label">University</label>
+                  <input required type="text" class="form-input" id="university" name="university" tabindex="4" placeholder="Enter your university">
+                </div>
+                <div class="my-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input required type="text" class="form-input" id="phone" name="phone" tabindex="5" placeholder="Enter your phone number">
+                </div>
+                <button type="button" id="firstToSecond" tabindex="6" class="form-button d-block ms-auto">Next Step</button>
+              </div>
+              <!-- End of First Form -->
+
+              <!-- Second Form -->
+              <div id="secondForm" style="display: none;">
+                <h3 class="form-section h7">Team Member 1*</h3>
+                <div class="my-3">
+                  <label for="member1_name" class="form-label">Full Name</label>
+                  <input required type="text" class="form-input" id="member1_name" name="member1_name" tabindex="7" placeholder="Enter your full name">
+                </div>
+                <div class="my-3">
+                  <label for="member1_email" class="form-label">Email</label>
+                  <input required type="email" class="form-input" id="member1_email" name="member1_email" tabindex="8" placeholder="Enter your email">
+                </div>
+                <div class="my-3">
+                  <label for="member1_phone" class="form-label">Phone Number</label>
+                  <input required type="text" class="form-input" id="member1_phone" name="member1_phone" tabindex="9" placeholder="Enter your phone number">
+                </div>
+                <h3 class="form-section h7">Team Member 2*</h3>
+                <div class="my-3">
+                  <label for="member2_name" class="form-label">Full Name</label>
+                  <input required type="text" class="form-input" id="member2_name" name="member2_name" tabindex="10" placeholder="Enter your full name">
+                </div>
+                <div class="my-3">
+                  <label for="member2_email" class="form-label">Email</label>
+                  <input required type="email" class="form-input" id="member2_email" name="member2_email" tabindex="11" placeholder="Enter your email">
+                </div>
+                <div class="my-3">
+                  <label for="member2_phone" class="form-label">Phone Number</label>
+                  <input required type="text" class="form-input" id="member2_phone" name="member2_phone" tabindex="12" placeholder="Enter your phone number">
+                </div>
+                <h3 class="form-section h7">Team Member 3*</h3>
+                <div class="my-3">
+                  <label for="member3_name" class="form-label">Full Name</label>
+                  <input required type="text" class="form-input" id="member3_name" name="member3_name" tabindex="13" placeholder="Enter your full name">
+                </div>
+                <div class="my-3">
+                  <label for="member3_email" class="form-label">Email</label>
+                  <input required type="email" class="form-input" id="member3_email" name="member3_email" tabindex="14" placeholder="Enter your email">
+                </div>
+                <div class="my-3">
+                  <label for="member3_phone" class="form-label">Phone Number</label>
+                  <input required type="text" class="form-input" id="member3_phone" name="member3_phone" tabindex="15" placeholder="Enter your phone number">
+                </div>
+                <h3 class="form-section h7">Team Member 4</h3>
+                <div class="my-3">
+                  <label for="member4_name" class="form-label">Full Name</label>
+                  <input type="text" class="form-input" id="member4_name" name="member4_name" tabindex="16" placeholder="Enter your full name">
+                </div>
+                <div class="my-3">
+                  <label for="member4_email" class="form-label">Email</label>
+                  <input type="email" class="form-input" id="member4_email" name="member4_email" tabindex="17" placeholder="Enter your email">
+                </div>
+                <div class="my-3">
+                  <label for="member4_phone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-input" id="member4_phone" name="member4_phone" tabindex="18" placeholder="Enter your phone number">
+                </div>
+                <button type="button" id="secondToDocument" tabindex="19" class="form-button d-block ms-auto">Next Step</button>
+              </div>
+              <!-- End of Second Form -->
+            </div>
+            <!-- End of Information Form -->
+
+            <!-- Documents Form -->
+            <div id="documentForm" class="form-container" style="display: none;">
+              <span class="form-step body4">Step 2/2</span>
+              <h2 class="form-title h6">Complete Submission</h2>
+              <p class="form-instruction body4">Thanks for taking the time to complete this form</p>
+              <hr class="form-line">
+              <h3 class="form-section h7">Upload your identity</h3>
+              <div class="my-3">
+                <label for="leader_file" class="form-label">Team leader*</label>
+                <input required class="form-control" type="file" id="leader_file" name="leader_file" tabindex="20">
+              </div>
+              <div class="my-3">
+                <label for="member1_file" class="form-label">Team member 1*</label>
+                <input required class="form-control" type="file" id="member1_file" name="member1_file" tabindex="21">
+              </div>
+              <div class="my-3">
+                <label for="member2_file" class="form-label">Team member 2*</label>
+                <input required class="form-control" type="file" id="member2_file" name="member2_file" tabindex="22">
+              </div>
+              <div class="my-3">
+                <label for="member3_file" class="form-label">Team member 3*</label>
+                <input required class="form-control" type="file" id="member3_file" name="member3_file" tabindex="23">
+              </div>
+              <div class="my-3">
+                <label for="member4_file" class="form-label">Team member 4</label>
+                <input class="form-control" type="file" id="member4_file" name="member4_file" tabindex="24">
+              </div>
+              <button type="submit" tabindex="25" class="form-button d-block ms-auto">Complete Submission</button>
+            </div>
+            <!-- End of Documents Form -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript Addition -->
+  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(function() {
+      $('#firstToSecond').on('click', function () {
+        $('#firstForm').fadeOut("3000", function () {
+          $(this).css({ display: "none" });
+          $('#secondForm').fadeIn("3000", function () {
+            $(this).css({ display: "block" });
+          });
+        });
+      });
+      $('#secondToDocument').on('click', function () {
+        $('.indicator-image').removeClass('active');
+        $('#documentsIndicator').addClass('active');
+        $('#informationForm').fadeOut("3000", function () {
+          $(this).css({ display: "none" });
+          $('#documentForm').fadeIn("3000", function () {
+            $(this).css({ display: "block" });
+          });
+        });
+      });
+      $('#informationIndicator').on('click', function() {
+        $('#firstForm').css({ display: "block" });
+        $('#secondForm').css({ display: "none" });
+        $('.indicator-image').removeClass('active');
+        $('#informationIndicator').addClass('active');
+        $('#documentForm').fadeOut("3000", function () {
+          $(this).css({ display: "none" });
+          $('#informationForm').fadeIn("3000", function () {
+            $(this).css({ display: "block" });
+          });
+        });
+      });
+      $('#documentsIndicator').on('click', function() {
+        $('.indicator-image').removeClass('active');
+        $('#documentsIndicator').addClass('active');
+        $('#informationForm').fadeOut("3000", function () {
+          $(this).css({ display: "none" });
+          $('#documentForm').fadeIn("3000", function () {
+            $(this).css({ display: "block" });
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
