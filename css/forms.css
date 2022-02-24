@@ -1,0 +1,86 @@
+body{
+    background-color: #1b2131;
+    color: black;
+    font-family: 'Poppins';
+}
+.col-lg-7{
+    padding-top: 10%;
+    color: #FFFFFF;
+}
+.col-lg-5{
+    padding-top: 7%;
+}
+.card-body{
+    color: white;
+    background-color: #1b2131;
+}
+.deskripsi{
+    font: 400 1rem/1.75rem "Poppins";
+    margin-right: 30%;
+}
+.image-kubus{
+    position: relative;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    padding-right: 10%;
+    margin-right: 20%;
+}
+
+/* responsive */
+
+
+/* @media screen and (max-width: 912px) {
+    .judul{
+        font-size: 4em;
+    }
+    .deskripsi{
+    margin-right: 0%;
+    font-size: 2em;
+    }
+    .image-kubus{
+        width: 400px;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .deskripsi{
+    margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .deskripsi{
+    margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .deskripsi{
+    margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .deskripsi{
+    margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .deskripsi{
+    margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .judul{
+        font-size: 30px;
+    }
+    .deskripsi{
+    margin-right: 0%;
+    font-size: 20px;
+    }
+}
