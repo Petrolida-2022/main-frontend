@@ -33,21 +33,21 @@
             <p class="body3 mt-2">Getting closer to us, join now!</p>
             <div class="my-3">
               <label for="fullname" class="form-label">Your full name</label>
-              <input type="text" class="form-input" id="fullname" name="name" autofocus placeholder="Enter your full name">
+              <input required type="text" class="form-input" id="fullname" name="name" autofocus placeholder="Enter your full name">
             </div>
             <div class="my-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-input" id="email" name="email" placeholder="Enter email address">
+              <input required type="email" class="form-input" id="email" name="email" placeholder="Enter email address">
             </div>
             <div class="my-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-input" id="password" name="password" placeholder="Enter password">
+              <input required type="password" class="form-input" id="password" name="password" placeholder="Enter password">
             </div>
             <div class="my-3">
-              <input type="checkbox" id="confirm" class="form-checkbox d-inline-block me-2">
+              <input required type="checkbox" id="confirm" class="form-checkbox d-inline-block me-2">
               <label for="confirm" class="form-label">I agree to the terms & conditions</label>
             </div>
-            <button type="submit" class="form-button d-block ms-auto w-100">Register Account</button>
+            <button type="submit" id="submitButton" class="form-button d-block ms-auto w-100 disabled">Register Account</button>
             <p class="body2 text-center mt-4">Already have an account? <a href="" class="form-link">Sign in</a></p>
           </div>
         </div>
@@ -58,6 +58,19 @@
 
   <!-- Javascript Addition -->
   <script src="vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function(){
+      $('input[type="checkbox"]').click(function(){
+        if($(this).is(":checked")){
+          $('#submitButton').removeClass('disabled');
+        }
+        else if($(this).is(":not(:checked)")){
+          $('#submitButton').addClass('disabled');
+        }
+      });
+    });
+  </script>
 
 </body>
 

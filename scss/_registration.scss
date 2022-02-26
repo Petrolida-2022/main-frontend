@@ -164,6 +164,13 @@
       background-color: transparent;
       color: $green-primary;
     }
+    &.disabled {
+      filter: grayscale(0.5);
+      &:hover {
+        background-color: $green-primary;
+        color: $white-primary;
+      }
+    }
   }
   &-link {
     color: $green-primary;
