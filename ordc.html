@@ -154,28 +154,55 @@
               <h3 class="form-section h7">Upload your identity</h3>
               <div class="my-3">
                 <label for="leader_file" class="form-label">Team leader*</label>
-                <input required class="form-control" type="file" id="leader_file" name="leader_file" tabindex="20" accept=".png,.jpg,.jpeg,.pdf">
+                <input required class="form-control" type="file" id="leader_file" name="leader_file" tabindex="20" accept=".zip,.rar">
+                <small class="text-danger body4">Max 5MB Format zip/rar</small>
               </div>
               <div class="my-3">
                 <label for="member1_file" class="form-label">Team member 1*</label>
-                <input required class="form-control" type="file" id="member1_file" name="member1_file" tabindex="21" accept=".png,.jpg,.jpeg,.pdf">
+                <input required class="form-control" type="file" id="member1_file" name="member1_file" tabindex="21" accept=".zip,.rar">
+                <small class="text-danger body4">Max 5MB Format zip/rar</small>
               </div>
               <div class="my-3">
                 <label for="member2_file" class="form-label">Team member 2*</label>
-                <input required class="form-control" type="file" id="member2_file" name="member2_file" tabindex="22" accept=".png,.jpg,.jpeg,.pdf">
+                <input required class="form-control" type="file" id="member2_file" name="member2_file" tabindex="22" accept=".zip,.rar">
+                <small class="text-danger body4">Max 5MB Format zip/rar</small>
               </div>
               <div class="my-3">
                 <label for="member3_file" class="form-label">Team member 3*</label>
-                <input required class="form-control" type="file" id="member3_file" name="member3_file" tabindex="23" accept=".png,.jpg,.jpeg,.pdf">
+                <input required class="form-control" type="file" id="member3_file" name="member3_file" tabindex="23" accept=".zip,.rar">
+                <small class="text-danger body4">Max 5MB Format zip/rar</small>
               </div>
               <div class="my-3">
                 <label for="member4_file" class="form-label">Team member 4</label>
                 <input class="form-control" type="file" id="member4_file" name="member4_file" tabindex="24">
               </div>
               <h3 class="form-section h7 mt-4">Upload your Payment</h3>
+              <a class="payment-button body2 collapsed d-flex align-items-center mt-2" data-bs-toggle="collapse" href="#paymentDestination" role="button" aria-expanded="false" aria-controls="paymentDestination">
+                <img src="img/chevron-down.svg" class="payment-chevron d-block me-2" alt="">
+                Destination bank account
+              </a>
+              <div class="collapse" id="paymentDestination">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="payment my-3 d-flex flex-column justify-content-center align-items-center">
+                      <img src="img/mandiri-logo.png" class="payment-logo" alt="">
+                      <p class="payment-target mt-3 mb-2">1400018470352</p>
+                      <p class="payment-name">a.n Elysha Mundisari</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="payment my-3 d-flex flex-column justify-content-center align-items-center">
+                      <img src="img/paypal-logo.png" class="payment-logo" alt="">
+                      <p class="payment-target mt-3 mb-2">www.paypal.me/elyshamundisari</p>
+                      <p class="payment-name">a.n Elysha Mundisari</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="my-3">
                 <label for="payment" class="form-label">Payment slip*</label>
-                <input required class="form-control" type="file" id="payment" name="payment" tabindex="25" accept=".png,.jpg,.jpeg,.pdf">
+                <input required class="form-control" type="file" id="payment" name="payment" tabindex="25" accept=".png,.jpg,.jpeg">
+                <small class="text-danger body4">Max 1MB Format jpg/jpeg/png</small>
               </div>
               <button type="submit" tabindex="26" class="form-button d-block ms-auto">Complete Submission</button>
             </div>
@@ -230,6 +257,13 @@
             $(this).css({ display: "block" });
           });
         });
+      });
+      $('.payment-button').on('click', function () {
+        if($(this).hasClass('collapsed')) {
+          $('.payment-chevron').css('transform', 'rotate(270deg)')
+        } else {
+          $('.payment-chevron').css('transform', 'rotate(0deg)')
+        }
       });
     });
   </script>
